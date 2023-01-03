@@ -1,0 +1,150 @@
+[
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\layout_fragment_slideshow.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\layout\\fragment_slideshow.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\drawable_ic_menu_gallery.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\drawable\\ic_menu_gallery.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\navigation_mobile_navigation.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\navigation\\mobile_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\layout_content_navigation_drawer.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\layout\\content_navigation_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\layout_fragment_notifications.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\layout\\fragment_notifications.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\drawable_ic_home_black_24dp.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\drawable\\ic_home_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\drawable\\ic_dashboard_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\navigation_mobile_navigation2.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\navigation\\mobile_navigation2.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\layout_app_bar_navigation_drawer.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\layout\\app_bar_navigation_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\layout_fragment_dashboard.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\layout\\fragment_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\drawable_ic_menu_slideshow.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\drawable\\ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\layout_activity_navigation_drawer.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\layout\\activity_navigation_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\drawable\\ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\drawable_ic_menu_camera.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\drawable\\ic_menu_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\drawable_side_nav_bar.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\drawable\\side_nav_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\menu_activity_main_drawer.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\menu\\activity_main_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "fr.kabaparis.go4lunch.app-merged_res-55:/menu_activity_main_drawer.xml.flat",
+        "source": "fr.kabaparis.go4lunch.app-main-57:/menu/activity_main_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\menu_navigation_drawer.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\menu\\navigation_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\layout_nav_header_navigation_drawer.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\layout\\nav_header_navigation_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-merged_res-55:\\layout_fragment_gallery.xml.flat",
+        "source": "C:\\Users\\KABAD\\.gradle\\daemon\\7.4\\fr.kabaparis.go4lunch.app-main-57:\\layout\\fragment_gallery.xml"
+    }
+]

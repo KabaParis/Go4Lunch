@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "fr.kabaparis.go4lunch.app-mergeDebugResources-54:/layout/fragment_dashboard.xml",
+        "source": "fr.kabaparis.go4lunch.app-main-57:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "fr.kabaparis.go4lunch.app-mergeDebugResources-54:/layout/fragment_home.xml",
+        "source": "fr.kabaparis.go4lunch.app-main-57:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "fr.kabaparis.go4lunch.app-mergeDebugResources-54:/layout/content_navigation_drawer.xml",
+        "source": "fr.kabaparis.go4lunch.app-main-57:/layout/content_navigation_drawer.xml"
+    },
+    {
+        "merged": "fr.kabaparis.go4lunch.app-mergeDebugResources-54:/layout/fragment_notifications.xml",
+        "source": "fr.kabaparis.go4lunch.app-main-57:/layout/fragment_notifications.xml"
+    },
+    {
+        "merged": "fr.kabaparis.go4lunch.app-mergeDebugResources-54:/layout/activity_main.xml",
+        "source": "fr.kabaparis.go4lunch.app-main-57:/layout/activity_main.xml"
+    },
+    {
+        "merged": "fr.kabaparis.go4lunch.app-mergeDebugResources-54:/layout/app_bar_navigation_drawer.xml",
+        "source": "fr.kabaparis.go4lunch.app-main-57:/layout/app_bar_navigation_drawer.xml"
+    },
+    {
+        "merged": "fr.kabaparis.go4lunch.app-mergeDebugResources-54:/layout/activity_navigation_drawer.xml",
+        "source": "fr.kabaparis.go4lunch.app-main-57:/layout/activity_navigation_drawer.xml"
+    },
+    {
+        "merged": "fr.kabaparis.go4lunch.app-mergeDebugResources-54:/layout/nav_header_navigation_drawer.xml",
+        "source": "fr.kabaparis.go4lunch.app-main-57:/layout/nav_header_navigation_drawer.xml"
+    },
+    {
+        "merged": "fr.kabaparis.go4lunch.app-mergeDebugResources-54:/layout/fragment_gallery.xml",
+        "source": "fr.kabaparis.go4lunch.app-main-57:/layout/fragment_gallery.xml"
+    },
+    {
+        "merged": "fr.kabaparis.go4lunch.app-mergeDebugResources-54:/layout/fragment_slideshow.xml",
+        "source": "fr.kabaparis.go4lunch.app-main-57:/layout/fragment_slideshow.xml"
+    }
+]

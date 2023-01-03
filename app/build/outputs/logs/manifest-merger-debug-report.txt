@@ -1,0 +1,1001 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:2:1-41:12
+MERGED from [androidx.databinding:viewbinding:7.3.1] C:\Users\KABAD\.gradle\caches\transforms-3\745207ee99efbc5e4a0eaacc5350b024\transformed\viewbinding-7.3.1\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.navigation:navigation-ui:2.5.3] C:\Users\KABAD\.gradle\caches\transforms-3\fc8358206c2f7c81c107f738227658bf\transformed\navigation-ui-2.5.3\AndroidManifest.xml:17:1-24:12
+MERGED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:2:1-119:12
+MERGED from [com.google.android.material:material:1.7.0] C:\Users\KABAD\.gradle\caches\transforms-3\b59d239bbdc480a58e10af65e1ae5f72\transformed\material-1.7.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\KABAD\.gradle\caches\transforms-3\bd4fbdc78a7c4fe385a0f94d67cfb1d2\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.android:facebook-login:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\63658428977e0ccefbead422bb169673\transformed\facebook-login-15.2.0\AndroidManifest.xml:9:1-19:12
+MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\731be7af67ac9f228f8242f8a71649fe\transformed\appcompat-resources-1.5.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.android:facebook-common:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1662e76b5c7cf5e39fb54b83cb638ba\transformed\facebook-common-15.2.0\AndroidManifest.xml:9:1-44:12
+MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\e6ac26bc31b0525876c1ee0daa4b42b9\transformed\appcompat-1.5.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\cf22382d569ff5127c6e0f97a27c1fa1\transformed\lifecycle-livedata-ktx-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment:2.5.3] C:\Users\KABAD\.gradle\caches\transforms-3\90b34614728ecca249b4ebff8dfd8229\transformed\navigation-fragment-2.5.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.5.4] C:\Users\KABAD\.gradle\caches\transforms-3\c2efc263faafe966133da25dfd4c1401\transformed\fragment-ktx-1.5.4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime:2.5.3] C:\Users\KABAD\.gradle\caches\transforms-3\fd34691413c519b2b057718c1f48afb7\transformed\navigation-runtime-2.5.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\3a9e2f34eb67aaa2b53064b8e5bd0e15\transformed\activity-ktx-1.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.5.3] C:\Users\KABAD\.gradle\caches\transforms-3\e0792ea0503bf540da7a90d6d0bc8abc\transformed\navigation-common-2.5.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\9c7d470bc116a7e034ac5796db6d9882\transformed\lifecycle-viewmodel-ktx-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.firebaseui:firebase-ui-database:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\63617f00a6ef233e12ae93ae89f12438\transformed\firebase-ui-database-8.0.2\AndroidManifest.xml:2:1-11:12
+MERGED from [com.firebaseui:firebase-ui-firestore:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\534b85d55a496cbf1a0c7833cae4e146\transformed\firebase-ui-firestore-8.0.2\AndroidManifest.xml:2:1-11:12
+MERGED from [com.firebaseui:firebase-ui-storage:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\953434a3183c8eabeafb6d955d35f018\transformed\firebase-ui-storage-8.0.2\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-analytics:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b00dc614456b540f55579678b5df06c\transformed\firebase-analytics-21.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:17:1-73:12
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\c8fa54c16c8e660432ff88e90122e456\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:2:1-25:12
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\2c21c3b2fc19d17821467cbff3349f0b\transformed\firebase-storage-20.1.0\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\f9e476a5068f8d04a66fc1e76e153fbb\transformed\firebase-database-20.1.0\AndroidManifest.xml:15:1-37:12
+MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\14a48fb248debf4a6780af785e0a4882\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\ef57eae6003fea05ae9196dd10bb77ce\transformed\firebase-appcheck-interop-16.1.0\AndroidManifest.xml:15:1-25:12
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\a6b71ed9a27b54b343186fa6f512c375\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\88561437534491ca2e1e7b86941d561e\transformed\firebase-installations-17.1.0\AndroidManifest.xml:2:1-23:12
+MERGED from [com.google.firebase:firebase-common:20.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\71bfb16b3c49fa620730b2a20ff786cc\transformed\firebase-common-20.2.0\AndroidManifest.xml:15:1-39:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\73ef11dbae8ebde6bae05a5a6e52e476\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\ba0aa6a05d70330df74ef86e3e66c416\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\b76cea2d27ff03d23e84e67f749922c9\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\KABAD\.gradle\caches\transforms-3\a528f695b18ec67839af49f1ee916c2e\transformed\play-services-auth-20.3.0\AndroidManifest.xml:17:1-40:12
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\KABAD\.gradle\caches\transforms-3\f5efa703d841db23c12dc3b08377ff83\transformed\glide-4.11.0\AndroidManifest.xml:2:1-12:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\24260e878ab1abbc9c6f0c5ecccfc3f9\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\3c727f2ec6f1e08eb0f7e1e828e6f364\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\KABAD\.gradle\caches\transforms-3\168b43a0d3108fd722dff431eebc1543\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\1fc6666a92b69959f8c6cd4ef554c0e4\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\3b20c19594e6bdaf5d174af3fe522897\transformed\play-services-base-18.0.1\AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:17:1-46:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1e26ad01f2262238f1c70e847c959bf\transformed\play-services-measurement-sdk-21.2.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\09143cc3e9657ac149f52f0017ea07d3\transformed\firebase-installations-interop-17.1.0\AndroidManifest.xml:15:1-22:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\15e9d1bad075600d722b14929b6f8ea4\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\94a0bbff4d34a21c6961ea5b57613a21\transformed\play-services-measurement-impl-21.2.0\AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\a07ba4cb0365107db9a7de26011fa5c3\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\f45704b6522cecd0a7e05fcf177f4866\transformed\play-services-measurement-sdk-api-21.2.0\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-measurement-base:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\22bb61d55f0773cc4bb17ee8db727882\transformed\play-services-measurement-base-21.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\f0ea769e21891235a7b04d59bca298f8\transformed\play-services-stats-17.0.2\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\304c90e56f359d43bbd88ec299d67b5b\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\ba8f7e67922d34fab65bbc0ee4a05362\transformed\play-services-basement-18.1.0\AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\KABAD\.gradle\caches\transforms-3\1fc4148fdf0efe8213ee4a0b67f4e5b2\transformed\fragment-1.5.4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\63661e54ad6d441a95f7786de55aa059\transformed\activity-1.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:9:1-50:12
+MERGED from [com.firebaseui:firebase-ui-common:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\8991fe7df67d1701d3fc65644c72395f\transformed\firebase-ui-common-8.0.2\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\abd7aaeb79eae65c1bd1e0e024975ffc\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\c11fbe87c75d8fe6428fb821027ed111\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\89288d471df0a01a25fc4f1bda82615a\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\f0cab340ec6bb2cd6987c858e490b680\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\949540cf97b73edd0867422b27839614\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\2eea6e5901bcc62f9ed0e6ff97ac6c40\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.android:facebook-bolts:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\e81d74f882cb447e0ae7e55d0e2e7e77\transformed\facebook-bolts-15.2.0\AndroidManifest.xml:9:1-19:12
+MERGED from [androidx.core:core-ktx:1.8.0] C:\Users\KABAD\.gradle\caches\transforms-3\f6b7b8db4bf06571afc1cfa6cbb4c714\transformed\core-ktx-1.8.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\76984ce50500763f8636890f8b770281\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\18736114fdc4ecbef1a9b7e62a7c09a2\transformed\emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\KABAD\.gradle\caches\transforms-3\7d1b5a610444545961236545946853fb\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\095124a5932bc72401f54ebaedaf9de5\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\8d54b194ad1e83c8045b6464cb195c0e\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\df6d1d33def4b10b0423cee40a7bdb7a\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\2aed353c4b986c4d1b0ab8d4e8a38fb2\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\KABAD\.gradle\caches\transforms-3\19c95bad50625a1755e0a425074f0a84\transformed\recyclerview-1.2.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\a27c6aa758d032b426a7d4666caa658d\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\684a2495bc5be7cf5f5d25e0bc1f6cce\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\760f4c549c7cb6eff33dbd61e96522e4\transformed\transition-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.window:window:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\7d6cc00d3832693bcfb722c583e25fc6\transformed\window-1.0.0\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\c45f6ae8a109b7db9dbad709e883ce96\transformed\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\KABAD\.gradle\caches\transforms-3\96adf75cfd55dfe1c3b73958b3d01700\transformed\browser-1.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\dbf065fb828ca57a98cd6512f2e20cc9\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\4c3df3124742de66495eccc736592590\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.8.0] C:\Users\KABAD\.gradle\caches\transforms-3\817b2fb9475b60d41f673b4294c05843\transformed\core-1.8.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\1c7dcfd24ba625f74349331b28a8d942\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\ce64ddaf91787b502a21030c5a692331\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\6e56859ad7a65c0f4c43fd6b19818ead\transformed\lifecycle-runtime-ktx-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\456fd3674d81d69ae4582918bb16bc08\transformed\lifecycle-service-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\1833f4e8a2d3ce47a893859fffcb915e\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\ebfa7be45ab9e4a7a566f83a91d792c4\transformed\savedstate-ktx-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c04e4038d5b71cd9a097a3387e5cf49e\transformed\savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\59cf86b0e95c42c757877b47490fe1ff\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\KABAD\.gradle\caches\transforms-3\d35d1fcdb52f1da33a7dcb5b8f2f0daa\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\c87e62856deb2507466891638b8f4c53\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\KABAD\.gradle\caches\transforms-3\53673f7728c16cd7057e7ffde8579471\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\2128826ed262e2f4ee193213417fa0af\transformed\lifecycle-livedata-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.paging:paging-rxjava3:3.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\aaf1c36ac0c0f67b8386d2c9c575f3b4\transformed\paging-rxjava3-3.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\1b83fda0c5996d03433c794bcb653a2b\transformed\lifecycle-livedata-core-ktx-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\5657535f01bf71addea092df6c4c9593\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\62fb20ba47ad1e357e85822438e21de2\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-components:17.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\861b84fe4ec8349b838fce5447dccd58\transformed\firebase-components-17.0.1\AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\6c96a6dd53fe98cfe9266e44435b0016\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\a06b537ddc24e03387fd8b51c47c2f94\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\KABAD\.gradle\caches\transforms-3\375150bfb9d91d0ca71c61d58980f91e\transformed\gifdecoder-4.11.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\2441972e65fa7117c7ca2b2340a26429\transformed\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\aeaf8de85d7c5ea719c58c6183a252e4\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\6152cb50a4ed726001f0cf54b60d51b7\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\491a0e5819943aeaa994981afd1f7fc5\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\902ee512583ce6694101e4c2dfd21c62\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
+MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\KABAD\.gradle\caches\transforms-3\10c5c53f650db3262fb986b401ffe6b3\transformed\grpc-android-1.50.2\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\KABAD\.gradle\caches\transforms-3\0472b7292d0d403cdde45a85d9f2d27b\transformed\installreferrer-1.0\AndroidManifest.xml:2:1-13:12
+INJECTED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:2:1-41:12
+	package
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:4:5-36
+		INJECTED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:2:1-41:12
+		INJECTED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:2:1-41:12
+		INJECTED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:6:5-67
+MERGED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:11:5-67
+MERGED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:11:5-67
+MERGED from [com.firebaseui:firebase-ui-database:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\63617f00a6ef233e12ae93ae89f12438\transformed\firebase-ui-database-8.0.2\AndroidManifest.xml:9:5-67
+MERGED from [com.firebaseui:firebase-ui-database:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\63617f00a6ef233e12ae93ae89f12438\transformed\firebase-ui-database-8.0.2\AndroidManifest.xml:9:5-67
+MERGED from [com.firebaseui:firebase-ui-firestore:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\534b85d55a496cbf1a0c7833cae4e146\transformed\firebase-ui-firestore-8.0.2\AndroidManifest.xml:9:5-67
+MERGED from [com.firebaseui:firebase-ui-firestore:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\534b85d55a496cbf1a0c7833cae4e146\transformed\firebase-ui-firestore-8.0.2\AndroidManifest.xml:9:5-67
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\c8fa54c16c8e660432ff88e90122e456\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:13:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\c8fa54c16c8e660432ff88e90122e456\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:13:5-67
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\2c21c3b2fc19d17821467cbff3349f0b\transformed\firebase-storage-20.1.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\2c21c3b2fc19d17821467cbff3349f0b\transformed\firebase-storage-20.1.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\f9e476a5068f8d04a66fc1e76e153fbb\transformed\firebase-database-20.1.0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\f9e476a5068f8d04a66fc1e76e153fbb\transformed\firebase-database-20.1.0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\14a48fb248debf4a6780af785e0a4882\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\14a48fb248debf4a6780af785e0a4882\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\88561437534491ca2e1e7b86941d561e\transformed\firebase-installations-17.1.0\AndroidManifest.xml:10:5-67
+MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\88561437534491ca2e1e7b86941d561e\transformed\firebase-installations-17.1.0\AndroidManifest.xml:10:5-67
+MERGED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\94a0bbff4d34a21c6961ea5b57613a21\transformed\play-services-measurement-impl-21.2.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\94a0bbff4d34a21c6961ea5b57613a21\transformed\play-services-measurement-impl-21.2.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\f45704b6522cecd0a7e05fcf177f4866\transformed\play-services-measurement-sdk-api-21.2.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\f45704b6522cecd0a7e05fcf177f4866\transformed\play-services-measurement-sdk-api-21.2.0\AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:6:22-64
+application
+ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:8:5-39:19
+MERGED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:25:5-117:19
+MERGED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:25:5-117:19
+MERGED from [com.google.android.material:material:1.7.0] C:\Users\KABAD\.gradle\caches\transforms-3\b59d239bbdc480a58e10af65e1ae5f72\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.7.0] C:\Users\KABAD\.gradle\caches\transforms-3\b59d239bbdc480a58e10af65e1ae5f72\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\KABAD\.gradle\caches\transforms-3\bd4fbdc78a7c4fe385a0f94d67cfb1d2\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\KABAD\.gradle\caches\transforms-3\bd4fbdc78a7c4fe385a0f94d67cfb1d2\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [com.facebook.android:facebook-login:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\63658428977e0ccefbead422bb169673\transformed\facebook-login-15.2.0\AndroidManifest.xml:16:5-17:19
+MERGED from [com.facebook.android:facebook-login:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\63658428977e0ccefbead422bb169673\transformed\facebook-login-15.2.0\AndroidManifest.xml:16:5-17:19
+MERGED from [com.facebook.android:facebook-common:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1662e76b5c7cf5e39fb54b83cb638ba\transformed\facebook-common-15.2.0\AndroidManifest.xml:21:5-42:19
+MERGED from [com.facebook.android:facebook-common:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1662e76b5c7cf5e39fb54b83cb638ba\transformed\facebook-common-15.2.0\AndroidManifest.xml:21:5-42:19
+MERGED from [com.google.firebase:firebase-analytics:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b00dc614456b540f55579678b5df06c\transformed\firebase-analytics-21.2.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b00dc614456b540f55579678b5df06c\transformed\firebase-analytics-21.2.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:26:5-71:19
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:26:5-71:19
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\c8fa54c16c8e660432ff88e90122e456\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:15:5-23:19
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\c8fa54c16c8e660432ff88e90122e456\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:15:5-23:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\2c21c3b2fc19d17821467cbff3349f0b\transformed\firebase-storage-20.1.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\2c21c3b2fc19d17821467cbff3349f0b\transformed\firebase-storage-20.1.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\f9e476a5068f8d04a66fc1e76e153fbb\transformed\firebase-database-20.1.0\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\f9e476a5068f8d04a66fc1e76e153fbb\transformed\firebase-database-20.1.0\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\14a48fb248debf4a6780af785e0a4882\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\14a48fb248debf4a6780af785e0a4882\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\ef57eae6003fea05ae9196dd10bb77ce\transformed\firebase-appcheck-interop-16.1.0\AndroidManifest.xml:23:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\ef57eae6003fea05ae9196dd10bb77ce\transformed\firebase-appcheck-interop-16.1.0\AndroidManifest.xml:23:5-20
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\a6b71ed9a27b54b343186fa6f512c375\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\a6b71ed9a27b54b343186fa6f512c375\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\88561437534491ca2e1e7b86941d561e\transformed\firebase-installations-17.1.0\AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\88561437534491ca2e1e7b86941d561e\transformed\firebase-installations-17.1.0\AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.firebase:firebase-common:20.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\71bfb16b3c49fa620730b2a20ff786cc\transformed\firebase-common-20.2.0\AndroidManifest.xml:24:5-37:19
+MERGED from [com.google.firebase:firebase-common:20.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\71bfb16b3c49fa620730b2a20ff786cc\transformed\firebase-common-20.2.0\AndroidManifest.xml:24:5-37:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\b76cea2d27ff03d23e84e67f749922c9\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\b76cea2d27ff03d23e84e67f749922c9\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\KABAD\.gradle\caches\transforms-3\a528f695b18ec67839af49f1ee916c2e\transformed\play-services-auth-20.3.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\KABAD\.gradle\caches\transforms-3\a528f695b18ec67839af49f1ee916c2e\transformed\play-services-auth-20.3.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\KABAD\.gradle\caches\transforms-3\f5efa703d841db23c12dc3b08377ff83\transformed\glide-4.11.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\KABAD\.gradle\caches\transforms-3\f5efa703d841db23c12dc3b08377ff83\transformed\glide-4.11.0\AndroidManifest.xml:10:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\1fc6666a92b69959f8c6cd4ef554c0e4\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\1fc6666a92b69959f8c6cd4ef554c0e4\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\3b20c19594e6bdaf5d174af3fe522897\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\3b20c19594e6bdaf5d174af3fe522897\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1e26ad01f2262238f1c70e847c959bf\transformed\play-services-measurement-sdk-21.2.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1e26ad01f2262238f1c70e847c959bf\transformed\play-services-measurement-sdk-21.2.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\15e9d1bad075600d722b14929b6f8ea4\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\15e9d1bad075600d722b14929b6f8ea4\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\94a0bbff4d34a21c6961ea5b57613a21\transformed\play-services-measurement-impl-21.2.0\AndroidManifest.xml:29:5-30:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\94a0bbff4d34a21c6961ea5b57613a21\transformed\play-services-measurement-impl-21.2.0\AndroidManifest.xml:29:5-30:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\a07ba4cb0365107db9a7de26011fa5c3\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\a07ba4cb0365107db9a7de26011fa5c3\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\22bb61d55f0773cc4bb17ee8db727882\transformed\play-services-measurement-base-21.2.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\22bb61d55f0773cc4bb17ee8db727882\transformed\play-services-measurement-base-21.2.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\f0ea769e21891235a7b04d59bca298f8\transformed\play-services-stats-17.0.2\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\f0ea769e21891235a7b04d59bca298f8\transformed\play-services-stats-17.0.2\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\304c90e56f359d43bbd88ec299d67b5b\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\304c90e56f359d43bbd88ec299d67b5b\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\ba8f7e67922d34fab65bbc0ee4a05362\transformed\play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\ba8f7e67922d34fab65bbc0ee4a05362\transformed\play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:18:5-48:19
+MERGED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:18:5-48:19
+MERGED from [com.facebook.android:facebook-bolts:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\e81d74f882cb447e0ae7e55d0e2e7e77\transformed\facebook-bolts-15.2.0\AndroidManifest.xml:16:5-17:19
+MERGED from [com.facebook.android:facebook-bolts:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\e81d74f882cb447e0ae7e55d0e2e7e77\transformed\facebook-bolts-15.2.0\AndroidManifest.xml:16:5-17:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\18736114fdc4ecbef1a9b7e62a7c09a2\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\18736114fdc4ecbef1a9b7e62a7c09a2\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.window:window:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\7d6cc00d3832693bcfb722c583e25fc6\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\7d6cc00d3832693bcfb722c583e25fc6\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.core:core:1.8.0] C:\Users\KABAD\.gradle\caches\transforms-3\817b2fb9475b60d41f673b4294c05843\transformed\core-1.8.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.8.0] C:\Users\KABAD\.gradle\caches\transforms-3\817b2fb9475b60d41f673b4294c05843\transformed\core-1.8.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\ce64ddaf91787b502a21030c5a692331\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\ce64ddaf91787b502a21030c5a692331\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\KABAD\.gradle\caches\transforms-3\d35d1fcdb52f1da33a7dcb5b8f2f0daa\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\KABAD\.gradle\caches\transforms-3\d35d1fcdb52f1da33a7dcb5b8f2f0daa\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\KABAD\.gradle\caches\transforms-3\53673f7728c16cd7057e7ffde8579471\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\KABAD\.gradle\caches\transforms-3\53673f7728c16cd7057e7ffde8579471\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\KABAD\.gradle\caches\transforms-3\375150bfb9d91d0ca71c61d58980f91e\transformed\gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\KABAD\.gradle\caches\transforms-3\375150bfb9d91d0ca71c61d58980f91e\transformed\gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
+MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\KABAD\.gradle\caches\transforms-3\0472b7292d0d403cdde45a85d9f2d27b\transformed\installreferrer-1.0\AndroidManifest.xml:11:5-20
+MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\KABAD\.gradle\caches\transforms-3\0472b7292d0d403cdde45a85d9f2d27b\transformed\installreferrer-1.0\AndroidManifest.xml:11:5-20
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.8.0] C:\Users\KABAD\.gradle\caches\transforms-3\817b2fb9475b60d41f673b4294c05843\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:11:9-41
+	android:roundIcon
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:12:9-54
+	android:icon
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:14:9-46
+activity#fr.kabaparis.go4lunch.NavigationDrawerActivity
+ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:15:9-23:20
+	android:label
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:18:13-69
+	android:exported
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:17:13-37
+	android:theme
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:19:13-62
+	android:name
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:16:13-53
+meta-data#android.app.lib_name
+ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:20:13-22:36
+	android:value
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:22:17-33
+	android:name
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:21:17-52
+meta-data#com.facebook.sdk.ClientToken
+ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:25:9-27:61
+	android:value
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:27:13-58
+	android:name
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:26:13-56
+activity#fr.kabaparis.go4lunch.MainActivity
+ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:29:9-38:20
+	android:label
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:32:13-45
+	android:exported
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:31:13-36
+	android:name
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:30:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:33:13-37:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:34:17-69
+	android:name
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:34:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:36:17-77
+	android:name
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml:36:27-74
+uses-sdk
+INJECTED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:7.3.1] C:\Users\KABAD\.gradle\caches\transforms-3\745207ee99efbc5e4a0eaacc5350b024\transformed\viewbinding-7.3.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.databinding:viewbinding:7.3.1] C:\Users\KABAD\.gradle\caches\transforms-3\745207ee99efbc5e4a0eaacc5350b024\transformed\viewbinding-7.3.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.navigation:navigation-ui:2.5.3] C:\Users\KABAD\.gradle\caches\transforms-3\fc8358206c2f7c81c107f738227658bf\transformed\navigation-ui-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.5.3] C:\Users\KABAD\.gradle\caches\transforms-3\fc8358206c2f7c81c107f738227658bf\transformed\navigation-ui-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:6:5-8:41
+MERGED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.material:material:1.7.0] C:\Users\KABAD\.gradle\caches\transforms-3\b59d239bbdc480a58e10af65e1ae5f72\transformed\material-1.7.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.7.0] C:\Users\KABAD\.gradle\caches\transforms-3\b59d239bbdc480a58e10af65e1ae5f72\transformed\material-1.7.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\KABAD\.gradle\caches\transforms-3\bd4fbdc78a7c4fe385a0f94d67cfb1d2\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\KABAD\.gradle\caches\transforms-3\bd4fbdc78a7c4fe385a0f94d67cfb1d2\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.android:facebook-login:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\63658428977e0ccefbead422bb169673\transformed\facebook-login-15.2.0\AndroidManifest.xml:12:5-14:41
+MERGED from [com.facebook.android:facebook-login:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\63658428977e0ccefbead422bb169673\transformed\facebook-login-15.2.0\AndroidManifest.xml:12:5-14:41
+MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\731be7af67ac9f228f8242f8a71649fe\transformed\appcompat-resources-1.5.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\731be7af67ac9f228f8242f8a71649fe\transformed\appcompat-resources-1.5.1\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-common:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1662e76b5c7cf5e39fb54b83cb638ba\transformed\facebook-common-15.2.0\AndroidManifest.xml:13:5-15:41
+MERGED from [com.facebook.android:facebook-common:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1662e76b5c7cf5e39fb54b83cb638ba\transformed\facebook-common-15.2.0\AndroidManifest.xml:13:5-15:41
+MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\e6ac26bc31b0525876c1ee0daa4b42b9\transformed\appcompat-1.5.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\e6ac26bc31b0525876c1ee0daa4b42b9\transformed\appcompat-1.5.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\cf22382d569ff5127c6e0f97a27c1fa1\transformed\lifecycle-livedata-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\cf22382d569ff5127c6e0f97a27c1fa1\transformed\lifecycle-livedata-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.5.3] C:\Users\KABAD\.gradle\caches\transforms-3\90b34614728ecca249b4ebff8dfd8229\transformed\navigation-fragment-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.5.3] C:\Users\KABAD\.gradle\caches\transforms-3\90b34614728ecca249b4ebff8dfd8229\transformed\navigation-fragment-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.5.4] C:\Users\KABAD\.gradle\caches\transforms-3\c2efc263faafe966133da25dfd4c1401\transformed\fragment-ktx-1.5.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.5.4] C:\Users\KABAD\.gradle\caches\transforms-3\c2efc263faafe966133da25dfd4c1401\transformed\fragment-ktx-1.5.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.5.3] C:\Users\KABAD\.gradle\caches\transforms-3\fd34691413c519b2b057718c1f48afb7\transformed\navigation-runtime-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.5.3] C:\Users\KABAD\.gradle\caches\transforms-3\fd34691413c519b2b057718c1f48afb7\transformed\navigation-runtime-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\3a9e2f34eb67aaa2b53064b8e5bd0e15\transformed\activity-ktx-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\3a9e2f34eb67aaa2b53064b8e5bd0e15\transformed\activity-ktx-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.5.3] C:\Users\KABAD\.gradle\caches\transforms-3\e0792ea0503bf540da7a90d6d0bc8abc\transformed\navigation-common-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.5.3] C:\Users\KABAD\.gradle\caches\transforms-3\e0792ea0503bf540da7a90d6d0bc8abc\transformed\navigation-common-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\9c7d470bc116a7e034ac5796db6d9882\transformed\lifecycle-viewmodel-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\9c7d470bc116a7e034ac5796db6d9882\transformed\lifecycle-viewmodel-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.firebaseui:firebase-ui-database:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\63617f00a6ef233e12ae93ae89f12438\transformed\firebase-ui-database-8.0.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.firebaseui:firebase-ui-database:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\63617f00a6ef233e12ae93ae89f12438\transformed\firebase-ui-database-8.0.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.firebaseui:firebase-ui-firestore:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\534b85d55a496cbf1a0c7833cae4e146\transformed\firebase-ui-firestore-8.0.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.firebaseui:firebase-ui-firestore:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\534b85d55a496cbf1a0c7833cae4e146\transformed\firebase-ui-firestore-8.0.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.firebaseui:firebase-ui-storage:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\953434a3183c8eabeafb6d955d35f018\transformed\firebase-ui-storage-8.0.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.firebaseui:firebase-ui-storage:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\953434a3183c8eabeafb6d955d35f018\transformed\firebase-ui-storage-8.0.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-analytics:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b00dc614456b540f55579678b5df06c\transformed\firebase-analytics-21.2.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b00dc614456b540f55579678b5df06c\transformed\firebase-analytics-21.2.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\c8fa54c16c8e660432ff88e90122e456\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\c8fa54c16c8e660432ff88e90122e456\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\2c21c3b2fc19d17821467cbff3349f0b\transformed\firebase-storage-20.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\2c21c3b2fc19d17821467cbff3349f0b\transformed\firebase-storage-20.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\f9e476a5068f8d04a66fc1e76e153fbb\transformed\firebase-database-20.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\f9e476a5068f8d04a66fc1e76e153fbb\transformed\firebase-database-20.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\14a48fb248debf4a6780af785e0a4882\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\14a48fb248debf4a6780af785e0a4882\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\ef57eae6003fea05ae9196dd10bb77ce\transformed\firebase-appcheck-interop-16.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\ef57eae6003fea05ae9196dd10bb77ce\transformed\firebase-appcheck-interop-16.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\a6b71ed9a27b54b343186fa6f512c375\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\a6b71ed9a27b54b343186fa6f512c375\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\88561437534491ca2e1e7b86941d561e\transformed\firebase-installations-17.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\88561437534491ca2e1e7b86941d561e\transformed\firebase-installations-17.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-common:20.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\71bfb16b3c49fa620730b2a20ff786cc\transformed\firebase-common-20.2.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-common:20.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\71bfb16b3c49fa620730b2a20ff786cc\transformed\firebase-common-20.2.0\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\73ef11dbae8ebde6bae05a5a6e52e476\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\73ef11dbae8ebde6bae05a5a6e52e476\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\ba0aa6a05d70330df74ef86e3e66c416\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\ba0aa6a05d70330df74ef86e3e66c416\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\b76cea2d27ff03d23e84e67f749922c9\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\b76cea2d27ff03d23e84e67f749922c9\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\KABAD\.gradle\caches\transforms-3\a528f695b18ec67839af49f1ee916c2e\transformed\play-services-auth-20.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\KABAD\.gradle\caches\transforms-3\a528f695b18ec67839af49f1ee916c2e\transformed\play-services-auth-20.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\KABAD\.gradle\caches\transforms-3\f5efa703d841db23c12dc3b08377ff83\transformed\glide-4.11.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\KABAD\.gradle\caches\transforms-3\f5efa703d841db23c12dc3b08377ff83\transformed\glide-4.11.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\24260e878ab1abbc9c6f0c5ecccfc3f9\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\24260e878ab1abbc9c6f0c5ecccfc3f9\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\3c727f2ec6f1e08eb0f7e1e828e6f364\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\3c727f2ec6f1e08eb0f7e1e828e6f364\transformed\play-services-auth-api-phone-18.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\KABAD\.gradle\caches\transforms-3\168b43a0d3108fd722dff431eebc1543\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\KABAD\.gradle\caches\transforms-3\168b43a0d3108fd722dff431eebc1543\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\1fc6666a92b69959f8c6cd4ef554c0e4\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\1fc6666a92b69959f8c6cd4ef554c0e4\transformed\play-services-safetynet-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\3b20c19594e6bdaf5d174af3fe522897\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\3b20c19594e6bdaf5d174af3fe522897\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1e26ad01f2262238f1c70e847c959bf\transformed\play-services-measurement-sdk-21.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1e26ad01f2262238f1c70e847c959bf\transformed\play-services-measurement-sdk-21.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\09143cc3e9657ac149f52f0017ea07d3\transformed\firebase-installations-interop-17.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\09143cc3e9657ac149f52f0017ea07d3\transformed\firebase-installations-interop-17.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\15e9d1bad075600d722b14929b6f8ea4\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\15e9d1bad075600d722b14929b6f8ea4\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\94a0bbff4d34a21c6961ea5b57613a21\transformed\play-services-measurement-impl-21.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\94a0bbff4d34a21c6961ea5b57613a21\transformed\play-services-measurement-impl-21.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\a07ba4cb0365107db9a7de26011fa5c3\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\a07ba4cb0365107db9a7de26011fa5c3\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\f45704b6522cecd0a7e05fcf177f4866\transformed\play-services-measurement-sdk-api-21.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\f45704b6522cecd0a7e05fcf177f4866\transformed\play-services-measurement-sdk-api-21.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\22bb61d55f0773cc4bb17ee8db727882\transformed\play-services-measurement-base-21.2.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\22bb61d55f0773cc4bb17ee8db727882\transformed\play-services-measurement-base-21.2.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\f0ea769e21891235a7b04d59bca298f8\transformed\play-services-stats-17.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\f0ea769e21891235a7b04d59bca298f8\transformed\play-services-stats-17.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\304c90e56f359d43bbd88ec299d67b5b\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\304c90e56f359d43bbd88ec299d67b5b\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\ba8f7e67922d34fab65bbc0ee4a05362\transformed\play-services-basement-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\ba8f7e67922d34fab65bbc0ee4a05362\transformed\play-services-basement-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\KABAD\.gradle\caches\transforms-3\1fc4148fdf0efe8213ee4a0b67f4e5b2\transformed\fragment-1.5.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\KABAD\.gradle\caches\transforms-3\1fc4148fdf0efe8213ee4a0b67f4e5b2\transformed\fragment-1.5.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\63661e54ad6d441a95f7786de55aa059\transformed\activity-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\63661e54ad6d441a95f7786de55aa059\transformed\activity-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:12:5-14:41
+MERGED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:12:5-14:41
+MERGED from [com.firebaseui:firebase-ui-common:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\8991fe7df67d1701d3fc65644c72395f\transformed\firebase-ui-common-8.0.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.firebaseui:firebase-ui-common:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\8991fe7df67d1701d3fc65644c72395f\transformed\firebase-ui-common-8.0.2\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\abd7aaeb79eae65c1bd1e0e024975ffc\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\abd7aaeb79eae65c1bd1e0e024975ffc\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\c11fbe87c75d8fe6428fb821027ed111\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\c11fbe87c75d8fe6428fb821027ed111\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\89288d471df0a01a25fc4f1bda82615a\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\89288d471df0a01a25fc4f1bda82615a\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\f0cab340ec6bb2cd6987c858e490b680\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\f0cab340ec6bb2cd6987c858e490b680\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\949540cf97b73edd0867422b27839614\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\949540cf97b73edd0867422b27839614\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\2eea6e5901bcc62f9ed0e6ff97ac6c40\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\2eea6e5901bcc62f9ed0e6ff97ac6c40\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.android:facebook-bolts:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\e81d74f882cb447e0ae7e55d0e2e7e77\transformed\facebook-bolts-15.2.0\AndroidManifest.xml:12:5-14:41
+MERGED from [com.facebook.android:facebook-bolts:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\e81d74f882cb447e0ae7e55d0e2e7e77\transformed\facebook-bolts-15.2.0\AndroidManifest.xml:12:5-14:41
+MERGED from [androidx.core:core-ktx:1.8.0] C:\Users\KABAD\.gradle\caches\transforms-3\f6b7b8db4bf06571afc1cfa6cbb4c714\transformed\core-ktx-1.8.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.8.0] C:\Users\KABAD\.gradle\caches\transforms-3\f6b7b8db4bf06571afc1cfa6cbb4c714\transformed\core-ktx-1.8.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\76984ce50500763f8636890f8b770281\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\76984ce50500763f8636890f8b770281\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\18736114fdc4ecbef1a9b7e62a7c09a2\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\18736114fdc4ecbef1a9b7e62a7c09a2\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\KABAD\.gradle\caches\transforms-3\7d1b5a610444545961236545946853fb\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\KABAD\.gradle\caches\transforms-3\7d1b5a610444545961236545946853fb\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\095124a5932bc72401f54ebaedaf9de5\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\095124a5932bc72401f54ebaedaf9de5\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\8d54b194ad1e83c8045b6464cb195c0e\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\8d54b194ad1e83c8045b6464cb195c0e\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\df6d1d33def4b10b0423cee40a7bdb7a\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\df6d1d33def4b10b0423cee40a7bdb7a\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\2aed353c4b986c4d1b0ab8d4e8a38fb2\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\2aed353c4b986c4d1b0ab8d4e8a38fb2\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\KABAD\.gradle\caches\transforms-3\19c95bad50625a1755e0a425074f0a84\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\KABAD\.gradle\caches\transforms-3\19c95bad50625a1755e0a425074f0a84\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\a27c6aa758d032b426a7d4666caa658d\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\a27c6aa758d032b426a7d4666caa658d\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\684a2495bc5be7cf5f5d25e0bc1f6cce\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\684a2495bc5be7cf5f5d25e0bc1f6cce\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\760f4c549c7cb6eff33dbd61e96522e4\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\760f4c549c7cb6eff33dbd61e96522e4\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\7d6cc00d3832693bcfb722c583e25fc6\transformed\window-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\7d6cc00d3832693bcfb722c583e25fc6\transformed\window-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\c45f6ae8a109b7db9dbad709e883ce96\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\c45f6ae8a109b7db9dbad709e883ce96\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\KABAD\.gradle\caches\transforms-3\96adf75cfd55dfe1c3b73958b3d01700\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] C:\Users\KABAD\.gradle\caches\transforms-3\96adf75cfd55dfe1c3b73958b3d01700\transformed\browser-1.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\dbf065fb828ca57a98cd6512f2e20cc9\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\dbf065fb828ca57a98cd6512f2e20cc9\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\4c3df3124742de66495eccc736592590\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\4c3df3124742de66495eccc736592590\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.8.0] C:\Users\KABAD\.gradle\caches\transforms-3\817b2fb9475b60d41f673b4294c05843\transformed\core-1.8.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.8.0] C:\Users\KABAD\.gradle\caches\transforms-3\817b2fb9475b60d41f673b4294c05843\transformed\core-1.8.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\1c7dcfd24ba625f74349331b28a8d942\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\1c7dcfd24ba625f74349331b28a8d942\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\ce64ddaf91787b502a21030c5a692331\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\ce64ddaf91787b502a21030c5a692331\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\6e56859ad7a65c0f4c43fd6b19818ead\transformed\lifecycle-runtime-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\6e56859ad7a65c0f4c43fd6b19818ead\transformed\lifecycle-runtime-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\456fd3674d81d69ae4582918bb16bc08\transformed\lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\456fd3674d81d69ae4582918bb16bc08\transformed\lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\1833f4e8a2d3ce47a893859fffcb915e\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\1833f4e8a2d3ce47a893859fffcb915e\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\ebfa7be45ab9e4a7a566f83a91d792c4\transformed\savedstate-ktx-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\ebfa7be45ab9e4a7a566f83a91d792c4\transformed\savedstate-ktx-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c04e4038d5b71cd9a097a3387e5cf49e\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c04e4038d5b71cd9a097a3387e5cf49e\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\59cf86b0e95c42c757877b47490fe1ff\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\59cf86b0e95c42c757877b47490fe1ff\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\KABAD\.gradle\caches\transforms-3\d35d1fcdb52f1da33a7dcb5b8f2f0daa\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\KABAD\.gradle\caches\transforms-3\d35d1fcdb52f1da33a7dcb5b8f2f0daa\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\c87e62856deb2507466891638b8f4c53\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\c87e62856deb2507466891638b8f4c53\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\KABAD\.gradle\caches\transforms-3\53673f7728c16cd7057e7ffde8579471\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\KABAD\.gradle\caches\transforms-3\53673f7728c16cd7057e7ffde8579471\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\2128826ed262e2f4ee193213417fa0af\transformed\lifecycle-livedata-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\2128826ed262e2f4ee193213417fa0af\transformed\lifecycle-livedata-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.paging:paging-rxjava3:3.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\aaf1c36ac0c0f67b8386d2c9c575f3b4\transformed\paging-rxjava3-3.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.paging:paging-rxjava3:3.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\aaf1c36ac0c0f67b8386d2c9c575f3b4\transformed\paging-rxjava3-3.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\1b83fda0c5996d03433c794bcb653a2b\transformed\lifecycle-livedata-core-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\1b83fda0c5996d03433c794bcb653a2b\transformed\lifecycle-livedata-core-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\5657535f01bf71addea092df6c4c9593\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\KABAD\.gradle\caches\transforms-3\5657535f01bf71addea092df6c4c9593\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\62fb20ba47ad1e357e85822438e21de2\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\62fb20ba47ad1e357e85822438e21de2\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-components:17.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\861b84fe4ec8349b838fce5447dccd58\transformed\firebase-components-17.0.1\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\861b84fe4ec8349b838fce5447dccd58\transformed\firebase-components-17.0.1\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\6c96a6dd53fe98cfe9266e44435b0016\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\6c96a6dd53fe98cfe9266e44435b0016\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\a06b537ddc24e03387fd8b51c47c2f94\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\a06b537ddc24e03387fd8b51c47c2f94\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\KABAD\.gradle\caches\transforms-3\375150bfb9d91d0ca71c61d58980f91e\transformed\gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\KABAD\.gradle\caches\transforms-3\375150bfb9d91d0ca71c61d58980f91e\transformed\gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\2441972e65fa7117c7ca2b2340a26429\transformed\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\2441972e65fa7117c7ca2b2340a26429\transformed\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\aeaf8de85d7c5ea719c58c6183a252e4\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\aeaf8de85d7c5ea719c58c6183a252e4\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\6152cb50a4ed726001f0cf54b60d51b7\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\6152cb50a4ed726001f0cf54b60d51b7\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\491a0e5819943aeaa994981afd1f7fc5\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\491a0e5819943aeaa994981afd1f7fc5\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\902ee512583ce6694101e4c2dfd21c62\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\902ee512583ce6694101e4c2dfd21c62\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\KABAD\.gradle\caches\transforms-3\10c5c53f650db3262fb986b401ffe6b3\transformed\grpc-android-1.50.2\AndroidManifest.xml:5:5-7:41
+MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\KABAD\.gradle\caches\transforms-3\10c5c53f650db3262fb986b401ffe6b3\transformed\grpc-android-1.50.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\KABAD\.gradle\caches\transforms-3\0472b7292d0d403cdde45a85d9f2d27b\transformed\installreferrer-1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\KABAD\.gradle\caches\transforms-3\0472b7292d0d403cdde45a85d9f2d27b\transformed\installreferrer-1.0\AndroidManifest.xml:5:5-7:41
+INJECTED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\KABAD\Go4Lunch\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\c8fa54c16c8e660432ff88e90122e456\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\c8fa54c16c8e660432ff88e90122e456\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\2c21c3b2fc19d17821467cbff3349f0b\transformed\firebase-storage-20.1.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\2c21c3b2fc19d17821467cbff3349f0b\transformed\firebase-storage-20.1.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\f9e476a5068f8d04a66fc1e76e153fbb\transformed\firebase-database-20.1.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\f9e476a5068f8d04a66fc1e76e153fbb\transformed\firebase-database-20.1.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\14a48fb248debf4a6780af785e0a4882\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\14a48fb248debf4a6780af785e0a4882\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\88561437534491ca2e1e7b86941d561e\transformed\firebase-installations-17.1.0\AndroidManifest.xml:9:5-79
+MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\88561437534491ca2e1e7b86941d561e\transformed\firebase-installations-17.1.0\AndroidManifest.xml:9:5-79
+MERGED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\94a0bbff4d34a21c6961ea5b57613a21\transformed\play-services-measurement-impl-21.2.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\94a0bbff4d34a21c6961ea5b57613a21\transformed\play-services-measurement-impl-21.2.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\f45704b6522cecd0a7e05fcf177f4866\transformed\play-services-measurement-sdk-api-21.2.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\f45704b6522cecd0a7e05fcf177f4866\transformed\play-services-measurement-sdk-api-21.2.0\AndroidManifest.xml:24:5-79
+MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\KABAD\.gradle\caches\transforms-3\10c5c53f650db3262fb986b401ffe6b3\transformed\grpc-android-1.50.2\AndroidManifest.xml:9:5-79
+MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\KABAD\.gradle\caches\transforms-3\10c5c53f650db3262fb986b401ffe6b3\transformed\grpc-android-1.50.2\AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:10:22-76
+queries
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:15:5-23:15
+MERGED from [com.facebook.android:facebook-common:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1662e76b5c7cf5e39fb54b83cb638ba\transformed\facebook-common-15.2.0\AndroidManifest.xml:17:5-19:15
+MERGED from [com.facebook.android:facebook-common:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1662e76b5c7cf5e39fb54b83cb638ba\transformed\facebook-common-15.2.0\AndroidManifest.xml:17:5-19:15
+intent#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+data:scheme:http
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:16:9-22:18
+action#android.intent.action.VIEW
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:17:13-65
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:17:21-62
+category#android.intent.category.BROWSABLE
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:19:13-74
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:19:23-71
+data
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:21:13-43
+	android:scheme
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:21:19-40
+meta-data#com.google.android.gms.version
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:26:9-28:69
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\ba8f7e67922d34fab65bbc0ee4a05362\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\ba8f7e67922d34fab65bbc0ee4a05362\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:28:13-66
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:27:13-58
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:29:9-31:63
+	android:value
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:31:13-60
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:30:13-58
+activity#com.firebase.ui.auth.KickoffActivity
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:33:9-37:61
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:36:13-29
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:35:13-37
+	android:theme
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:37:13-58
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:34:13-64
+activity#com.firebase.ui.auth.ui.idp.SingleSignInActivity
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:38:9-42:61
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:41:13-29
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:40:13-37
+	android:theme
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:42:13-58
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:39:13-76
+activity#com.firebase.ui.auth.ui.credentials.CredentialSaveActivity
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:43:9-47:61
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:46:13-29
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:45:13-37
+	android:theme
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:47:13-58
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:44:13-86
+activity#com.firebase.ui.auth.ui.email.RecoverPasswordActivity
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:48:9-52:58
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:51:13-72
+	android:windowSoftInputMode
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:52:13-55
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:50:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:49:13-81
+activity#com.firebase.ui.auth.ui.email.EmailActivity
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:53:9-57:58
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:56:13-56
+	android:windowSoftInputMode
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:57:13-55
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:55:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:54:13-71
+activity#com.firebase.ui.auth.ui.phone.PhoneActivity
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:58:9-62:77
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:61:13-66
+	android:windowSoftInputMode
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:62:13-74
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:60:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:59:13-71
+activity#com.firebase.ui.auth.ui.idp.WelcomeBackIdpPrompt
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:63:9-67:58
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:66:13-70
+	android:windowSoftInputMode
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:67:13-55
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:65:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:64:13-76
+activity#com.firebase.ui.auth.ui.email.WelcomeBackPasswordPrompt
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:68:9-72:58
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:71:13-75
+	android:windowSoftInputMode
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:72:13-55
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:70:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:69:13-83
+activity#com.firebase.ui.auth.ui.email.WelcomeBackEmailLinkPrompt
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:73:9-77:58
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:76:13-75
+	android:windowSoftInputMode
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:77:13-55
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:75:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:74:13-84
+activity#com.firebase.ui.auth.ui.email.EmailLinkCatcherActivity
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:78:9-83:58
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:81:13-29
+	android:windowSoftInputMode
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:83:13-55
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:80:13-37
+	android:theme
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:82:13-58
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:79:13-82
+activity#com.firebase.ui.auth.ui.email.EmailLinkErrorRecoveryActivity
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:84:9-88:58
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:87:13-56
+	android:windowSoftInputMode
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:88:13-55
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:86:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:85:13-88
+activity#com.firebase.ui.auth.ui.idp.AuthMethodPickerActivity
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:89:9-92:65
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:92:13-62
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:91:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:90:13-80
+activity#com.facebook.FacebookActivity
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:93:9-97:48
+MERGED from [com.facebook.android:facebook-common:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1662e76b5c7cf5e39fb54b83cb638ba\transformed\facebook-common-15.2.0\AndroidManifest.xml:22:9-25:66
+MERGED from [com.facebook.android:facebook-common:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1662e76b5c7cf5e39fb54b83cb638ba\transformed\facebook-common-15.2.0\AndroidManifest.xml:22:9-25:66
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:96:13-45
+	tools:ignore
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:97:13-45
+	android:configChanges
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:95:13-96
+	android:theme
+		ADDED from [com.facebook.android:facebook-common:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1662e76b5c7cf5e39fb54b83cb638ba\transformed\facebook-common-15.2.0\AndroidManifest.xml:25:13-63
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:94:13-57
+activity#com.facebook.CustomTabActivity
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:98:9-110:20
+MERGED from [com.facebook.android:facebook-common:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1662e76b5c7cf5e39fb54b83cb638ba\transformed\facebook-common-15.2.0\AndroidManifest.xml:27:9-41:20
+MERGED from [com.facebook.android:facebook-common:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1662e76b5c7cf5e39fb54b83cb638ba\transformed\facebook-common-15.2.0\AndroidManifest.xml:27:9-41:20
+	tools:node
+		ADDED from [com.facebook.android:facebook-common:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1662e76b5c7cf5e39fb54b83cb638ba\transformed\facebook-common-15.2.0\AndroidManifest.xml:30:13-31
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:100:13-36
+	tools:ignore
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:101:13-45
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:99:13-58
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/facebook_login_protocol_scheme
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:102:13-109:29
+category#android.intent.category.DEFAULT
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:105:17-76
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:105:27-73
+provider#com.firebase.ui.auth.data.client.AuthUiInitProvider
+ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:112:9-116:38
+	android:authorities
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:114:13-70
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:115:13-37
+	android:initOrder
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:116:13-35
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:8.0.2] C:\Users\KABAD\.gradle\caches\transforms-3\e2a5c161cb1d746e82135325272af24c\transformed\firebase-ui-auth-8.0.2\AndroidManifest.xml:113:13-79
+package#com.facebook.katana
+ADDED from [com.facebook.android:facebook-common:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1662e76b5c7cf5e39fb54b83cb638ba\transformed\facebook-common-15.2.0\AndroidManifest.xml:18:9-55
+	android:name
+		ADDED from [com.facebook.android:facebook-common:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1662e76b5c7cf5e39fb54b83cb638ba\transformed\facebook-common-15.2.0\AndroidManifest.xml:18:18-52
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-common:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1662e76b5c7cf5e39fb54b83cb638ba\transformed\facebook-common-15.2.0\AndroidManifest.xml:26:9-71
+	android:name
+		ADDED from [com.facebook.android:facebook-common:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1662e76b5c7cf5e39fb54b83cb638ba\transformed\facebook-common-15.2.0\AndroidManifest.xml:26:19-68
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:cct.${applicationId}+data:scheme:fbconnect
+ADDED from [com.facebook.android:facebook-common:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1662e76b5c7cf5e39fb54b83cb638ba\transformed\facebook-common-15.2.0\AndroidManifest.xml:31:13-40:29
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:cct.fr.kabaparis.go4lunch+data:scheme:fbconnect
+ADDED from [com.facebook.android:facebook-common:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\c1662e76b5c7cf5e39fb54b83cb638ba\transformed\facebook-common-15.2.0\AndroidManifest.xml:31:13-40:29
+activity#com.google.firebase.auth.internal.GenericIdpActivity
+ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:29:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:31:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:30:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:32:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:28:13-80
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
+ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:33:13-43:29
+activity#com.google.firebase.auth.internal.RecaptchaActivity
+ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:45:9-62:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:47:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:49:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:48:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:50:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:46:13-79
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
+ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:51:13-61:29
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:64:9-70:19
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\c8fa54c16c8e660432ff88e90122e456\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:16:9-22:19
+MERGED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\c8fa54c16c8e660432ff88e90122e456\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:16:9-22:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\2c21c3b2fc19d17821467cbff3349f0b\transformed\firebase-storage-20.1.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\2c21c3b2fc19d17821467cbff3349f0b\transformed\firebase-storage-20.1.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\f9e476a5068f8d04a66fc1e76e153fbb\transformed\firebase-database-20.1.0\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\f9e476a5068f8d04a66fc1e76e153fbb\transformed\firebase-database-20.1.0\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\14a48fb248debf4a6780af785e0a4882\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\14a48fb248debf4a6780af785e0a4882\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\88561437534491ca2e1e7b86941d561e\transformed\firebase-installations-17.1.0\AndroidManifest.xml:14:9-20:19
+MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\88561437534491ca2e1e7b86941d561e\transformed\firebase-installations-17.1.0\AndroidManifest.xml:14:9-20:19
+MERGED from [com.google.firebase:firebase-common:20.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\71bfb16b3c49fa620730b2a20ff786cc\transformed\firebase-common-20.2.0\AndroidManifest.xml:32:9-36:35
+MERGED from [com.google.firebase:firebase-common:20.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\71bfb16b3c49fa620730b2a20ff786cc\transformed\firebase-common-20.2.0\AndroidManifest.xml:32:9-36:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:66:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:20.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\71bfb16b3c49fa620730b2a20ff786cc\transformed\firebase-common-20.2.0\AndroidManifest.xml:36:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\71bfb16b3c49fa620730b2a20ff786cc\transformed\firebase-common-20.2.0\AndroidManifest.xml:34:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:65:13-84
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:67:13-69:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:69:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\e2ab7bd22a8e7ef0d6c61d36c4463a9b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:68:17-109
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\c8fa54c16c8e660432ff88e90122e456\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:19:13-21:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\c8fa54c16c8e660432ff88e90122e456\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:21:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:24.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\c8fa54c16c8e660432ff88e90122e456\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:20:17-111
+meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
+ADDED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\2c21c3b2fc19d17821467cbff3349f0b\transformed\firebase-storage-20.1.0\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\2c21c3b2fc19d17821467cbff3349f0b\transformed\firebase-storage-20.1.0\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\2c21c3b2fc19d17821467cbff3349f0b\transformed\firebase-storage-20.1.0\AndroidManifest.xml:33:17-107
+meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
+ADDED from [com.google.firebase:firebase-database:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\f9e476a5068f8d04a66fc1e76e153fbb\transformed\firebase-database-20.1.0\AndroidManifest.xml:31:13-33:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\f9e476a5068f8d04a66fc1e76e153fbb\transformed\firebase-database-20.1.0\AndroidManifest.xml:33:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database:20.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\f9e476a5068f8d04a66fc1e76e153fbb\transformed\firebase-database-20.1.0\AndroidManifest.xml:32:17-109
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\14a48fb248debf4a6780af785e0a4882\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\94a0bbff4d34a21c6961ea5b57613a21\transformed\play-services-measurement-impl-21.2.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\94a0bbff4d34a21c6961ea5b57613a21\transformed\play-services-measurement-impl-21.2.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\f45704b6522cecd0a7e05fcf177f4866\transformed\play-services-measurement-sdk-api-21.2.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\f45704b6522cecd0a7e05fcf177f4866\transformed\play-services-measurement-sdk-api-21.2.0\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\14a48fb248debf4a6780af785e0a4882\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:24:22-65
+uses-permission#com.google.android.gms.permission.AD_ID
+ADDED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\14a48fb248debf4a6780af785e0a4882\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\94a0bbff4d34a21c6961ea5b57613a21\transformed\play-services-measurement-impl-21.2.0\AndroidManifest.xml:27:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\94a0bbff4d34a21c6961ea5b57613a21\transformed\play-services-measurement-impl-21.2.0\AndroidManifest.xml:27:5-79
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\a07ba4cb0365107db9a7de26011fa5c3\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\a07ba4cb0365107db9a7de26011fa5c3\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\f45704b6522cecd0a7e05fcf177f4866\transformed\play-services-measurement-sdk-api-21.2.0\AndroidManifest.xml:26:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\f45704b6522cecd0a7e05fcf177f4866\transformed\play-services-measurement-sdk-api-21.2.0\AndroidManifest.xml:26:5-79
+MERGED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:16:5-79
+MERGED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:16:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\14a48fb248debf4a6780af785e0a4882\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:25:22-76
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\14a48fb248debf4a6780af785e0a4882\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:31:13-33:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\14a48fb248debf4a6780af785e0a4882\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:33:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\14a48fb248debf4a6780af785e0a4882\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:32:17-139
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\88561437534491ca2e1e7b86941d561e\transformed\firebase-installations-17.1.0\AndroidManifest.xml:17:13-19:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\88561437534491ca2e1e7b86941d561e\transformed\firebase-installations-17.1.0\AndroidManifest.xml:19:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\KABAD\.gradle\caches\transforms-3\88561437534491ca2e1e7b86941d561e\transformed\firebase-installations-17.1.0\AndroidManifest.xml:18:17-127
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:20.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\71bfb16b3c49fa620730b2a20ff786cc\transformed\firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:20.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\71bfb16b3c49fa620730b2a20ff786cc\transformed\firebase-common-20.2.0\AndroidManifest.xml:27:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:20.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\71bfb16b3c49fa620730b2a20ff786cc\transformed\firebase-common-20.2.0\AndroidManifest.xml:29:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\71bfb16b3c49fa620730b2a20ff786cc\transformed\firebase-common-20.2.0\AndroidManifest.xml:28:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:20.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\71bfb16b3c49fa620730b2a20ff786cc\transformed\firebase-common-20.2.0\AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\71bfb16b3c49fa620730b2a20ff786cc\transformed\firebase-common-20.2.0\AndroidManifest.xml:26:13-77
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\KABAD\.gradle\caches\transforms-3\a528f695b18ec67839af49f1ee916c2e\transformed\play-services-auth-20.3.0\AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\KABAD\.gradle\caches\transforms-3\a528f695b18ec67839af49f1ee916c2e\transformed\play-services-auth-20.3.0\AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\KABAD\.gradle\caches\transforms-3\a528f695b18ec67839af49f1ee916c2e\transformed\play-services-auth-20.3.0\AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\KABAD\.gradle\caches\transforms-3\a528f695b18ec67839af49f1ee916c2e\transformed\play-services-auth-20.3.0\AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\KABAD\.gradle\caches\transforms-3\a528f695b18ec67839af49f1ee916c2e\transformed\play-services-auth-20.3.0\AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\KABAD\.gradle\caches\transforms-3\a528f695b18ec67839af49f1ee916c2e\transformed\play-services-auth-20.3.0\AndroidManifest.xml:33:9-37:51
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\KABAD\.gradle\caches\transforms-3\a528f695b18ec67839af49f1ee916c2e\transformed\play-services-auth-20.3.0\AndroidManifest.xml:35:13-36
+	android:visibleToInstantApps
+		ADDED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\KABAD\.gradle\caches\transforms-3\a528f695b18ec67839af49f1ee916c2e\transformed\play-services-auth-20.3.0\AndroidManifest.xml:37:13-48
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\KABAD\.gradle\caches\transforms-3\a528f695b18ec67839af49f1ee916c2e\transformed\play-services-auth-20.3.0\AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:20.3.0] C:\Users\KABAD\.gradle\caches\transforms-3\a528f695b18ec67839af49f1ee916c2e\transformed\play-services-auth-20.3.0\AndroidManifest.xml:34:13-89
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\3b20c19594e6bdaf5d174af3fe522897\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\3b20c19594e6bdaf5d174af3fe522897\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\3b20c19594e6bdaf5d174af3fe522897\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\KABAD\.gradle\caches\transforms-3\3b20c19594e6bdaf5d174af3fe522897\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\94a0bbff4d34a21c6961ea5b57613a21\transformed\play-services-measurement-impl-21.2.0\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\94a0bbff4d34a21c6961ea5b57613a21\transformed\play-services-measurement-impl-21.2.0\AndroidManifest.xml:26:5-110
+MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\KABAD\.gradle\caches\transforms-3\0472b7292d0d403cdde45a85d9f2d27b\transformed\installreferrer-1.0\AndroidManifest.xml:9:5-110
+MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\KABAD\.gradle\caches\transforms-3\0472b7292d0d403cdde45a85d9f2d27b\transformed\installreferrer-1.0\AndroidManifest.xml:9:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:30:13-85
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:36:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:39:9-43:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:41:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:42:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:43:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\4b7ba3542dbc43d4687b90b7fe7c80f4\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:40:13-87
+provider#com.facebook.internal.FacebookInitProvider
+ADDED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:29:9-32:40
+	android:authorities
+		ADDED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:31:13-72
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:30:13-70
+receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
+ADDED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:34:9-40:20
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:36:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:35:13-86
+intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:37:13-39:29
+action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:38:17-95
+	android:name
+		ADDED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:38:25-92
+receiver#com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver
+ADDED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:41:9-47:20
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:43:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:42:13-118
+intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:44:13-46:29
+action#com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:45:17-103
+	android:name
+		ADDED from [com.facebook.android:facebook-core:15.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\7c2d97fdf42757e8e6e368228ce09424\transformed\facebook-core-15.2.0\AndroidManifest.xml:45:25-100
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\18736114fdc4ecbef1a9b7e62a7c09a2\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\ce64ddaf91787b502a21030c5a692331\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\ce64ddaf91787b502a21030c5a692331\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\KABAD\.gradle\caches\transforms-3\d35d1fcdb52f1da33a7dcb5b8f2f0daa\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\KABAD\.gradle\caches\transforms-3\d35d1fcdb52f1da33a7dcb5b8f2f0daa\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\18736114fdc4ecbef1a9b7e62a7c09a2\transformed\emoji2-1.2.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\18736114fdc4ecbef1a9b7e62a7c09a2\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\18736114fdc4ecbef1a9b7e62a7c09a2\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\18736114fdc4ecbef1a9b7e62a7c09a2\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\18736114fdc4ecbef1a9b7e62a7c09a2\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\18736114fdc4ecbef1a9b7e62a7c09a2\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\KABAD\.gradle\caches\transforms-3\18736114fdc4ecbef1a9b7e62a7c09a2\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\7d6cc00d3832693bcfb722c583e25fc6\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\7d6cc00d3832693bcfb722c583e25fc6\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\7d6cc00d3832693bcfb722c583e25fc6\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\7d6cc00d3832693bcfb722c583e25fc6\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\7d6cc00d3832693bcfb722c583e25fc6\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] C:\Users\KABAD\.gradle\caches\transforms-3\7d6cc00d3832693bcfb722c583e25fc6\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\ce64ddaf91787b502a21030c5a692331\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\ce64ddaf91787b502a21030c5a692331\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\KABAD\.gradle\caches\transforms-3\ce64ddaf91787b502a21030c5a692331\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
