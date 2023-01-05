@@ -2,6 +2,7 @@ package fr.kabaparis.go4lunch;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.FirebaseAuthUIActivityResultContract;
@@ -58,14 +59,12 @@ public class MainActivity extends AppCompatActivity {
         Intent signInIntent = AuthUI.getInstance()
                 .createSignInIntentBuilder()
                 .setAvailableProviders(providers)
-                .setLogo(R.drawable.com_facebook_profile_picture_blank_portrait)
+                .setLogo(R.drawable.com_facebook_auth_dialog_background)
                 .setTheme(R.style.FirebaseUI_DefaultMaterialTheme)
                 .setAlwaysShowSignInMethodScreen(true)
                 .setIsSmartLockEnabled(false)
                 .build();
         signInLauncher.launch(signInIntent);
-
-
 
     }
         ActivityResultLauncher<Intent> signInLauncher = registerForActivityResult(new FirebaseAuthUIActivityResultContract(),

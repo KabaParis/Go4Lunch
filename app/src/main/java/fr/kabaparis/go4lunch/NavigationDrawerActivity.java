@@ -1,11 +1,15 @@
 package fr.kabaparis.go4lunch;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.firebase.ui.auth.AuthUI;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -21,6 +25,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import fr.kabaparis.go4lunch.databinding.ActivityNavigationDrawerBinding;
 
 public class NavigationDrawerActivity extends AppCompatActivity {
+
+    Button btn_sign_out;
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityNavigationDrawerBinding binding;
@@ -52,7 +58,33 @@ public class NavigationDrawerActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-        AuthUI.getInstance()
+        btn_sign_out = findViewById(R.id.sign_out_button);
+        btn_sign_out.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AuthUI.getInstance()
+                        .signOut(NavigationDrawerActivity.this)
+                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                signOut();
+                            }
+                        }).addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Toast.makeText(NavigationDrawerActivity.this, ""+ e.getMessage(), Toast.LENGTH_LONG).show();
+                            }
+                        });
+            }
+        });
+    }
+
+    private void signOut() {
+        startActivity(new Intent(this, MainActivity.class));
+        finish();
+    }
+
+/*        AuthUI.getInstance()
                 .signOut(this)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     public void onComplete(@NonNull Task<Void> task) {
@@ -60,7 +92,7 @@ public class NavigationDrawerActivity extends AppCompatActivity {
                     }
                 });
     }
-
+*/
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
