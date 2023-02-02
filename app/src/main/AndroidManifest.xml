@@ -19,9 +19,9 @@
 
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.Go4Lunch.ActionBar"
             android:exported="true"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
