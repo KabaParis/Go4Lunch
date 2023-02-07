@@ -240,7 +240,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 }
 
                 private void onSignInResult(FirebaseAuthUIAuthenticationResult result) {
-                    Glide.with(MainActivity.this).load(R.drawable.blurred_people_eating).circleCrop().into((ImageView)
+                    Glide.with(MainActivity.this).load(R.drawable.blurred_people_eating_gaussien).circleCrop().into((ImageView)
                             binding.activityMainNavView.getHeaderView(0).findViewById(R.id.header_user_picture));
                     IdpResponse response = result.getIdpResponse();
                     // Successfully signed in
