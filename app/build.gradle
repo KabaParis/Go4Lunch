@@ -3,6 +3,7 @@ plugins {
     // Add the Google services Gradle plugin
     id 'com.google.gms.google-services'
 
+
 }
 
 android {
@@ -73,4 +74,8 @@ dependencies {
     implementation 'com.facebook.android:facebook-login:15.2.0'
     implementation 'com.facebook.android:facebook-login:latest.release'
 
+    // Google Maps
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.android.libraries.places:places:3.0.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
 }

@@ -95,19 +95,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                                 public void onFailure(@NonNull Exception e) {
                                     Toast.makeText(MainActivity.this, "logout failed" + e.getMessage(), Toast.LENGTH_LONG).show();
                                 }
-                                public void onClick(View v) {
-                                    if (v.getId() == R.id.sign_out_button) {
-                                        AuthUI.getInstance()
-                                                .signOut(MainActivity.this)
-                                                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                                    public void onComplete(@NonNull Task<Void> task) {
-                                                        // user is now signed out
-                                                        startActivity(new Intent(String.valueOf(MainActivity.this)));
-                                                        finish();
-                                                    }
-                                                });
-                                    }
-                                }
                             });
                 }
                 return true;
@@ -161,7 +148,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void signOut() {
-        startActivity(new Intent(String.valueOf(MainActivity.this)));
+        startActivity(new Intent(MainActivity.this, MainActivity.class));
         finish();
     }
 
@@ -217,7 +204,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setSupportActionBar(binding.toolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        //     getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_view_list);
+        //getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_view_list);
     }
 
     // 2 - Configure Drawer Layout
@@ -240,8 +227,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 }
 
                 private void onSignInResult(FirebaseAuthUIAuthenticationResult result) {
-                    Glide.with(MainActivity.this).load(R.drawable.blurred_people_eating_gaussien).circleCrop().into((ImageView)
-                            binding.activityMainNavView.getHeaderView(0).findViewById(R.id.header_user_picture));
+    //                Glide.with(MainActivity.this).load(R.drawable.blurred_people_eating_gaussien).circleCrop().into((ImageView)
+    //                        binding.activityMainNavView.getHeaderView(0).findViewById(R.id.header_user_picture));
                     IdpResponse response = result.getIdpResponse();
                     // Successfully signed in
                     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
@@ -259,32 +246,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     });
 }
 
-/*
-
- private void signOut() {
-     signOut(MainActivity.this);
- }
-
-    public void signOut(MainActivity mainActivity) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(mainActivity);
-        builder.setTitle("Logout");
-        builder.setMessage("Are you sure you want to logout ? ");
-        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int i) {
-                finish();
-            }
-        });
-        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int i) {
-                dialog.dismiss();
-            }
-        });
-        builder.show();
-
-    }
-*/
 
 
 
