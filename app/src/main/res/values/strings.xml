@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Go4Lunch</string>
-    <string name="title_home">Map View</string>
+    <string name="title_home">I\'m Hungry!</string>
     <string name="title_dashboard">List View</string>
     <string name="title_notifications">Workmates</string>
     <string name="auth_activity_subtitle">Find a nice restaurant and invite your co-workers for lunch!</string>

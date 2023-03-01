@@ -10,10 +10,13 @@ import android.app.Application;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresPermission;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
@@ -46,107 +49,64 @@ import java.util.Objects;
 
 import fr.kabaparis.go4lunch.R;
 
-public class HomeViewModel extends ViewModel {
+public class HomeViewModel extends AndroidViewModel {
 
-    private static final int LOCATION_PERMISSION_REQUEST_CODE = 1;
-
-    private GoogleMap googleMap;
-    private FusedLocationProviderClient fusedLocationClient;
-    private Application application;
-    private static final int REQUEST_CODE_LOCATION_PERMISSION = 1;
+    private MutableLiveData<List<Place>> nearbyPlaces;
 
     public HomeViewModel(@NonNull Application application) {
-        this.application = application; // store the application context in the field
-        fusedLocationClient = LocationServices.getFusedLocationProviderClient(application);
-        Places.initialize(application, application.getString(R.string.google_api_key));
+        super(application);
+        nearbyPlaces = new MutableLiveData<>();
+
     }
 
-    public void requestLocationPermission(Activity activity) {
-        if (!isLocationPermissionGranted(activity)) {
-            ActivityCompat.requestPermissions(
-                    activity,
-                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
-                    LOCATION_PERMISSION_REQUEST_CODE);
-        }
-    }
-
-    private boolean isLocationPermissionGranted(Context context) {
-        return ContextCompat.checkSelfPermission(
-                context, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED;
-    }
-
-    private void searchForPlacesNearby(LatLng location) {
+    @RequiresPermission(Manifest.permission.ACCESS_FINE_LOCATION)
+    public LiveData<List<Place>> searchForPlacesNearby() {
         // Create a new Places client
-        PlacesClient placesClient = Places.createClient(application);
-
-        // Define the search parameters
-        String type = "restaurant";
-        int radius = 1000; // in meters
-        LatLngBounds bounds = LatLngBounds.builder()
-                .include(new LatLng(location.latitude - 0.1, location.longitude - 0.1))
-                .include(new LatLng(location.latitude + 0.1, location.longitude + 0.1))
-                .build();
-
-        // Check for location permission using the application context
-        if (ActivityCompat.checkSelfPermission(application, Manifest.permission.ACCESS_FINE_LOCATION)
-                != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(application, Manifest.permission.ACCESS_COARSE_LOCATION)
-                != PackageManager.PERMISSION_GRANTED) {
-            // Request permission here or show a message to the user
-            return;
-        }
+        PlacesClient placesClient = Places.createClient(getApplication());
 
         // Create the Places API request
-        List<String> placesType = new ArrayList<>();
-        placesType.add(type);
-        FindCurrentPlaceRequest request = FindCurrentPlaceRequest.builder(placesType)
-                .setLocationBias(RectangularBounds.newInstance(bounds))
-                .setFields(Arrays.asList(Place.Field.ID, Place.Field.NAME, Place.Field.LAT_LNG))
+        FindCurrentPlaceRequest request = FindCurrentPlaceRequest
+                .builder(Arrays.asList(Place.Field.ID, Place.Field.NAME, Place.Field.LAT_LNG))
                 .build();
 
- /*       List<Place.Field> placeFields = Arrays.asList((Place.Field.values()));
-        FindCurrentPlaceRequest request = FindCurrentPlaceRequest.builder(placeFields)
-                .setLocationBias(new LocationBias.Builder().setLooseness(0.1f).setLatLngBounds(bounds).build())
-                .build();
-*/
-
-        // Use the fused location provider client to get the current location and pass it to the Places API request
-        fusedLocationClient.getLastLocation().addOnSuccessListener(new OnSuccessListener<Location>() {
+        Task<FindCurrentPlaceResponse> task = placesClient.findCurrentPlace(request);
+        task.addOnSuccessListener(new OnSuccessListener<FindCurrentPlaceResponse>() {
             @Override
-            public void onSuccess(Location location) {
-                if (location != null) {
-                    request = request.newBuilder().setLocation(location).build();
-                    if (ActivityCompat.checkSelfPermission(application, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                        // Request permission here
-                        ActivityCompat.requestPermissions(new Activity(), new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_CODE_LOCATION_PERMISSION);
-                        return;
-
+            public void onSuccess(FindCurrentPlaceResponse response) {
+                List<Place> places = new ArrayList<>();
+                for (PlaceLikelihood placeLikelihood : response.getPlaceLikelihoods()) {
+                    Place place = placeLikelihood.getPlace();
+                    LatLng placeLocation = place.getLatLng();
+                    if (placeLikelihood.getPlace().getTypes().contains(Place.Type.RESTAURANT)) {
+                        // Add the restaurant to the list
+                        places.add(place);
+                        Log.d("SearchPlaces", "Found nearby restaurant: " + place.getName() + " at " + placeLocation);
+                        //TODO si je suis dans ligne 75 c'est que j'ai récupéré la liste des restos
+                        // Add a marker for the restaurant
                     }
-                    Task<FindCurrentPlaceResponse> task = placesClient.findCurrentPlace(request);
-                    task.addOnSuccessListener(new OnSuccessListener<FindCurrentPlaceResponse>() {
-                        @Override
-                        public void onSuccess(FindCurrentPlaceResponse response) {
-                            for (PlaceLikelihood placeLikelihood : response.getPlaceLikelihoods()) {
-                                Place place = placeLikelihood.getPlace();
-                                LatLng placeLocation = place.getLatLng();
-                                googleMap.addMarker(new MarkerOptions().position(placeLocation).title(place.getName()));
-                            }
-                        }
-                    }).addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-                            // Handle the error.
-                            if (e instanceof ApiException) {
-                                ApiException apiException = (ApiException) e;
-                                int statusCode = apiException.getStatusCode();
-                                // Handle the error status code as required.
-                            }
-
-                        }
-                    });
                 }
+                // Update the value of the LiveData
+                nearbyPlaces.postValue(places);
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                if (e instanceof ApiException) {
+                    ApiException apiException = (ApiException) e;
+                    int statusCode = apiException.getStatusCode();
+                    Log.e("SearchPlaces", "Error getting nearby places: " + statusCode);
+                    // Handle the error status code as required.
+                }
+
             }
         });
+        return nearbyPlaces;
     }
+        // Return the LiveData
+        public LiveData<List<Place>> getRestaurantPlacesLiveData () {
+            return nearbyPlaces;
+        }
+
 }
 
 

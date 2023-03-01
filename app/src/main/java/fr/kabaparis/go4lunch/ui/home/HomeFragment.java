@@ -56,7 +56,6 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
     private HomeViewModel homeViewModel;
     private FragmentHomeBinding binding;
     private GoogleMap googleMap;
-    private static final int PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 1;
     private boolean locationPermissionGranted = false;
     private FusedLocationProviderClient fusedLocationClient;
     public static final int REQUEST_CODE_LOCATION_PERMISSION = 1;
@@ -70,6 +69,42 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
 
         SupportMapFragment fragmentById = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
         fragmentById.getMapAsync(this);
+
+        // Observe the list of restaurant places
+        if (ContextCompat.checkSelfPermission(requireContext(),
+                Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+            // The app has been granted the ACCESS_FINE_LOCATION permission
+            // Call the searchForPlacesNearby() method
+            homeViewModel.searchForPlacesNearby().observe(getViewLifecycleOwner(), new Observer<List<Place>>() {
+                @Override
+                public void onChanged(List<Place> places) {
+                    for (Place place : places) {
+                        LatLng placeLocation = place.getLatLng();
+                        googleMap.addMarker(new MarkerOptions()
+                                .position(placeLocation)
+                                .title(place.getName())
+                                .snippet("Rating: " + place.getRating()));
+                    }
+                }
+            });
+        } else {
+            // The app has not been granted the ACCESS_FINE_LOCATION permission
+            // Request the permission from the user
+            requestPermissionLauncher.launch(Manifest.permission.ACCESS_FINE_LOCATION);
+        }
+
+        homeViewModel.searchForPlacesNearby().observe(getViewLifecycleOwner(), new Observer<List<Place>>() {
+            @Override
+            public void onChanged(List<Place> places) {
+                for (Place place : places) {
+                    LatLng placeLocation = place.getLatLng();
+                    googleMap.addMarker(new MarkerOptions()
+                            .position(placeLocation)
+                            .title(place.getName())
+                            .snippet("Rating: " + place.getRating()));
+                }
+            }
+        });
         return root;
     }
 
@@ -86,10 +121,10 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(getActivity());
     }
 
-    private ActivityResultLauncher<String[]> requestPermissionLauncher = registerForActivityResult(
-            new ActivityResultContracts.RequestMultiplePermissions(),
+    private ActivityResultLauncher<String> requestPermissionLauncher = registerForActivityResult(
+            new ActivityResultContracts.RequestPermission(),
             permissions -> {
-                if (permissions.containsValue(false)) {
+                if (permissions == false) {
                     Toast.makeText(getActivity(), "Location permission denied", Toast.LENGTH_SHORT).show();
                 } else {
                     locationPermissionGranted = true;
@@ -105,9 +140,24 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
                 Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             locationPermissionGranted = true;
             getUserLocation();
+            homeViewModel.searchForPlacesNearby();
+
         } else {
-            requestPermissionLauncher.launch(new String[]{Manifest.permission.ACCESS_FINE_LOCATION});
+            requestPermissionLauncher.launch(Manifest.permission.ACCESS_FINE_LOCATION);
         }
+        // Observe the list of restaurant places
+        homeViewModel.getRestaurantPlacesLiveData().observe(getViewLifecycleOwner(), new Observer<List<Place>>() {
+            @Override
+            public void onChanged(List<Place> places) {
+                for (Place place : places) {
+                    LatLng placeLocation = place.getLatLng();
+                    googleMap.addMarker(new MarkerOptions()
+                            .position(placeLocation)
+                            .title(place.getName())
+                            .snippet("Rating: " + place.getRating()));
+                }
+            }
+        });
     }
 
     private void getUserLocation() {
@@ -127,16 +177,15 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
                     @Override
                     public void onSuccess(Location location) {
                         if (location != null) {
-                            // Paris location
                             LatLng userLocation =
-         //                           new LatLng(48.8566, 2.3522); // Paris location
+                //                    new LatLng(48.8566, 2.3522); // Paris location
                                     new LatLng(location.getLatitude(),
                                     location.getLongitude());
                             // Add a marker at the user's current location
                             googleMap.addMarker(new MarkerOptions().position(userLocation)
                                     .title("Your location"));
                             // Move the camera to the user's location
-                            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 10));
+                            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 17));
                         }
                     }
                 });
