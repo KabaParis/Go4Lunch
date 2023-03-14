@@ -51,22 +51,22 @@ import fr.kabaparis.go4lunch.R;
 
 public class HomeViewModel extends AndroidViewModel {
 
-    private MutableLiveData<List<Place>> nearbyPlaces;
+    public final MutableLiveData<List<Place>> nearbyPlaces = new MutableLiveData<>();
 
     public HomeViewModel(@NonNull Application application) {
         super(application);
-        nearbyPlaces = new MutableLiveData<>();
 
     }
 
     @RequiresPermission(Manifest.permission.ACCESS_FINE_LOCATION)
-    public LiveData<List<Place>> searchForPlacesNearby() {
+    public void searchForPlacesNearby() {
         // Create a new Places client
         PlacesClient placesClient = Places.createClient(getApplication());
 
         // Create the Places API request
         FindCurrentPlaceRequest request = FindCurrentPlaceRequest
-                .builder(Arrays.asList(Place.Field.ID, Place.Field.NAME, Place.Field.LAT_LNG))
+                .builder(Arrays.asList(Place.Field.ID, Place.Field.NAME, Place.Field.LAT_LNG, Place.Field.TYPES,
+                        Place.Field.ADDRESS,Place.Field.ICON_URL, Place.Field.RATING))
                 .build();
 
         Task<FindCurrentPlaceResponse> task = placesClient.findCurrentPlace(request);
@@ -81,7 +81,6 @@ public class HomeViewModel extends AndroidViewModel {
                         // Add the restaurant to the list
                         places.add(place);
                         Log.d("SearchPlaces", "Found nearby restaurant: " + place.getName() + " at " + placeLocation);
-                        //TODO si je suis dans ligne 75 c'est que j'ai récupéré la liste des restos
                         // Add a marker for the restaurant
                     }
                 }
@@ -97,15 +96,10 @@ public class HomeViewModel extends AndroidViewModel {
                     Log.e("SearchPlaces", "Error getting nearby places: " + statusCode);
                     // Handle the error status code as required.
                 }
-
             }
         });
-        return nearbyPlaces;
+
     }
-        // Return the LiveData
-        public LiveData<List<Place>> getRestaurantPlacesLiveData () {
-            return nearbyPlaces;
-        }
 
 }
 

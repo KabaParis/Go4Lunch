@@ -216,7 +216,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     // 3 - Configure NavigationView
     private void configureNavigationView() {
-//        binding.activityMainNavView.setNavigationItemSelectedListener(this);
+  //      binding.activityMainNavView.setNavigationItemSelectedListener(this);
     }
 
     ActivityResultLauncher<Intent> signInLauncher = registerForActivityResult(new FirebaseAuthUIActivityResultContract(),

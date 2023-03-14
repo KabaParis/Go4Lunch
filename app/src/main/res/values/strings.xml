@@ -9,6 +9,7 @@
     <string name="facebook_application_id">672513384575715</string>
     <string name="facebook_login_protocol_scheme">fb672513384575715</string>
     <string name="facebook_client_token">08f086d1ebbe51d8a203d89edba77731</string>
+    <string name="google_places_api_key" translatable="false">AIzaSyDLDp27epOVPXvZpFwykDo5d24QJb3y2CQ</string>
     <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

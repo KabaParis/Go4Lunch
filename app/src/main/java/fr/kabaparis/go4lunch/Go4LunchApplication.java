@@ -8,6 +8,6 @@ public class Go4LunchApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        Places.initialize(this, getString(R.string.google_api_key));
+        Places.initialize(this, getString(R.string.google_places_api_key));
     }
 }

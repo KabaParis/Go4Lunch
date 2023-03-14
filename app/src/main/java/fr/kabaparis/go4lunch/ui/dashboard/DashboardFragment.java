@@ -4,43 +4,65 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import fr.kabaparis.go4lunch.R;
+import com.google.android.libraries.places.api.model.Place;
+
+import java.util.List;
+
 import fr.kabaparis.go4lunch.databinding.FragmentDashboardBinding;
+import fr.kabaparis.go4lunch.ui.RestaurantAdapter;
+import fr.kabaparis.go4lunch.ui.home.HomeViewModel;
 
 public class DashboardFragment extends Fragment {
 
-    private DashboardViewModel dashboardViewModel;
+    private HomeViewModel homeViewModel;
     private FragmentDashboardBinding binding;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        dashboardViewModel =
-                new ViewModelProvider(this).get(DashboardViewModel.class);
+    private RecyclerView nearbyRecyclerView;
+    private RestaurantAdapter nearbyAdapter;
 
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        // Inflate the layout for this fragment
         binding = FragmentDashboardBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textDashboard;
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        // Initialize the nearby ListView and adapter
+        nearbyRecyclerView = binding.nearbyRecyclerView;
+  //      nearbyRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        nearbyAdapter = new RestaurantAdapter(getContext());
+        nearbyRecyclerView.setAdapter(nearbyAdapter);
+
+        // Set the layout manager for the RecyclerView
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+        nearbyRecyclerView.setLayoutManager(layoutManager);
+
+        // Get a reference to the DashboardViewModel
+        homeViewModel = new ViewModelProvider(requireActivity()).get(HomeViewModel.class);
+
+        // Observe the nearbyPlaces LiveData from the DashboardViewModel
+        homeViewModel.nearbyPlaces.observe(getViewLifecycleOwner(), new Observer<List<Place>>() {
             @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
+            public void onChanged(List<Place> restaurants) {
+                // Update the nearbyRestaurants ArrayList and notify the adapter
+                nearbyAdapter.setRestaurants(restaurants);
+                nearbyAdapter.notifyDataSetChanged();
             }
         });
+
         return root;
     }
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
-    }
 }
+
+
+
+
+
+

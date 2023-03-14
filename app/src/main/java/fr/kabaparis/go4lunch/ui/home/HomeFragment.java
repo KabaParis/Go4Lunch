@@ -1,6 +1,7 @@
 package fr.kabaparis.go4lunch.ui.home;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -32,6 +33,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -62,7 +64,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
+        homeViewModel = new ViewModelProvider(requireActivity()).get(HomeViewModel.class);
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
@@ -70,41 +72,6 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
         SupportMapFragment fragmentById = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
         fragmentById.getMapAsync(this);
 
-        // Observe the list of restaurant places
-        if (ContextCompat.checkSelfPermission(requireContext(),
-                Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-            // The app has been granted the ACCESS_FINE_LOCATION permission
-            // Call the searchForPlacesNearby() method
-            homeViewModel.searchForPlacesNearby().observe(getViewLifecycleOwner(), new Observer<List<Place>>() {
-                @Override
-                public void onChanged(List<Place> places) {
-                    for (Place place : places) {
-                        LatLng placeLocation = place.getLatLng();
-                        googleMap.addMarker(new MarkerOptions()
-                                .position(placeLocation)
-                                .title(place.getName())
-                                .snippet("Rating: " + place.getRating()));
-                    }
-                }
-            });
-        } else {
-            // The app has not been granted the ACCESS_FINE_LOCATION permission
-            // Request the permission from the user
-            requestPermissionLauncher.launch(Manifest.permission.ACCESS_FINE_LOCATION);
-        }
-
-        homeViewModel.searchForPlacesNearby().observe(getViewLifecycleOwner(), new Observer<List<Place>>() {
-            @Override
-            public void onChanged(List<Place> places) {
-                for (Place place : places) {
-                    LatLng placeLocation = place.getLatLng();
-                    googleMap.addMarker(new MarkerOptions()
-                            .position(placeLocation)
-                            .title(place.getName())
-                            .snippet("Rating: " + place.getRating()));
-                }
-            }
-        });
         return root;
     }
 
@@ -136,25 +103,32 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
     @Override
     public void onMapReady(GoogleMap map) {
         googleMap = map;
+        googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            @Override
+            public boolean onMarkerClick(@NonNull Marker marker) {
+                Place tag = (Place) marker.getTag();
+                return false;
+            }
+        });
         if (ContextCompat.checkSelfPermission(requireContext(),
                 Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             locationPermissionGranted = true;
             getUserLocation();
-            homeViewModel.searchForPlacesNearby();
 
         } else {
             requestPermissionLauncher.launch(Manifest.permission.ACCESS_FINE_LOCATION);
         }
         // Observe the list of restaurant places
-        homeViewModel.getRestaurantPlacesLiveData().observe(getViewLifecycleOwner(), new Observer<List<Place>>() {
+        homeViewModel.nearbyPlaces.observe(getViewLifecycleOwner(), new Observer<List<Place>>() {
             @Override
             public void onChanged(List<Place> places) {
                 for (Place place : places) {
                     LatLng placeLocation = place.getLatLng();
-                    googleMap.addMarker(new MarkerOptions()
+                    Marker marker = googleMap.addMarker(new MarkerOptions()
                             .position(placeLocation)
                             .title(place.getName())
                             .snippet("Rating: " + place.getRating()));
+                    marker.setTag(place);
                 }
             }
         });
@@ -174,18 +148,20 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
         googleMap.setMyLocationEnabled(true);
         fusedLocationClient.getLastLocation()
                 .addOnSuccessListener(new OnSuccessListener<Location>() {
+                    @SuppressLint("MissingPermission")
                     @Override
                     public void onSuccess(Location location) {
                         if (location != null) {
                             LatLng userLocation =
-                //                    new LatLng(48.8566, 2.3522); // Paris location
-                                    new LatLng(location.getLatitude(),
+                 //                   new LatLng(48.8566, 2.3522); // Paris location
+                                   new LatLng(location.getLatitude(),
                                     location.getLongitude());
+                            homeViewModel.searchForPlacesNearby();
                             // Add a marker at the user's current location
-                            googleMap.addMarker(new MarkerOptions().position(userLocation)
-                                    .title("Your location"));
+                //            googleMap.addMarker(new MarkerOptions().position(userLocation)
+                //                    .title("Your location"));
                             // Move the camera to the user's location
-                            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 17));
+                            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 15));
                         }
                     }
                 });
