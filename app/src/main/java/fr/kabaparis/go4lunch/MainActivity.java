@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -244,6 +245,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     }
                 }
     });
+
 }
 
 

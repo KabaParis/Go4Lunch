@@ -3,6 +3,7 @@ package fr.kabaparis.go4lunch.ui.home;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
@@ -51,6 +52,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import fr.kabaparis.go4lunch.R;
+import fr.kabaparis.go4lunch.RestaurantDetailsActivity;
 import fr.kabaparis.go4lunch.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment implements OnMapReadyCallback {
@@ -106,8 +108,14 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
         googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(@NonNull Marker marker) {
+                // Get the Place object associated with the clicked marker
                 Place tag = (Place) marker.getTag();
-                return false;
+                // Open the details page for the clicked restaurant
+                Intent intent = new Intent(getActivity(), RestaurantDetailsActivity.class);
+                intent.putExtra("place_id", tag.getId());
+                startActivity(intent);
+
+                return true;
             }
         });
         if (ContextCompat.checkSelfPermission(requireContext(),
@@ -156,10 +164,11 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
                  //                   new LatLng(48.8566, 2.3522); // Paris location
                                    new LatLng(location.getLatitude(),
                                     location.getLongitude());
+                            homeViewModel.setUserLocation(userLocation);
                             homeViewModel.searchForPlacesNearby();
                             // Add a marker at the user's current location
-                //            googleMap.addMarker(new MarkerOptions().position(userLocation)
-                //                    .title("Your location"));
+                            googleMap.addMarker(new MarkerOptions().position(userLocation)
+                                    .title("Your location"));
                             // Move the camera to the user's location
                             googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 15));
                         }

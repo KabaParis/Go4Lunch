@@ -1,5 +1,6 @@
 package fr.kabaparis.go4lunch.ui.dashboard;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,17 +16,25 @@ import com.google.android.libraries.places.api.model.Place;
 
 import java.util.List;
 
+import fr.kabaparis.go4lunch.RestaurantDetailsActivity;
 import fr.kabaparis.go4lunch.databinding.FragmentDashboardBinding;
 import fr.kabaparis.go4lunch.ui.RestaurantAdapter;
 import fr.kabaparis.go4lunch.ui.home.HomeViewModel;
 
-public class DashboardFragment extends Fragment {
+public class DashboardFragment extends Fragment implements RestaurantAdapter.OnItemClickListener {
 
     private HomeViewModel homeViewModel;
     private FragmentDashboardBinding binding;
 
     private RecyclerView nearbyRecyclerView;
     private RestaurantAdapter nearbyAdapter;
+
+    @Override
+    public void onItemClick(Place restaurant) {
+        Intent intent = new Intent(getContext(), RestaurantDetailsActivity.class);
+        intent.putExtra("place_id", restaurant.getId());
+        startActivity(intent);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -47,12 +56,15 @@ public class DashboardFragment extends Fragment {
         // Get a reference to the DashboardViewModel
         homeViewModel = new ViewModelProvider(requireActivity()).get(HomeViewModel.class);
 
+        // Set the click listener for the RestaurantAdapter
+        nearbyAdapter.setOnItemClickListener(this);
+
         // Observe the nearbyPlaces LiveData from the DashboardViewModel
         homeViewModel.nearbyPlaces.observe(getViewLifecycleOwner(), new Observer<List<Place>>() {
             @Override
             public void onChanged(List<Place> restaurants) {
                 // Update the nearbyRestaurants ArrayList and notify the adapter
-                nearbyAdapter.setRestaurants(restaurants);
+                nearbyAdapter.setRestaurants(restaurants, homeViewModel.userLocation);
                 nearbyAdapter.notifyDataSetChanged();
             }
         });
@@ -60,6 +72,7 @@ public class DashboardFragment extends Fragment {
         return root;
     }
 }
+
 
 
 

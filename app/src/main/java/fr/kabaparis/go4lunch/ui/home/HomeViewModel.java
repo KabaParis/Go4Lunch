@@ -52,6 +52,7 @@ import fr.kabaparis.go4lunch.R;
 public class HomeViewModel extends AndroidViewModel {
 
     public final MutableLiveData<List<Place>> nearbyPlaces = new MutableLiveData<>();
+    public LatLng userLocation;
 
     public HomeViewModel(@NonNull Application application) {
         super(application);
@@ -66,7 +67,7 @@ public class HomeViewModel extends AndroidViewModel {
         // Create the Places API request
         FindCurrentPlaceRequest request = FindCurrentPlaceRequest
                 .builder(Arrays.asList(Place.Field.ID, Place.Field.NAME, Place.Field.LAT_LNG, Place.Field.TYPES,
-                        Place.Field.ADDRESS,Place.Field.ICON_URL, Place.Field.RATING))
+                        Place.Field.ADDRESS, Place.Field.PHOTO_METADATAS, Place.Field.RATING))
                 .build();
 
         Task<FindCurrentPlaceResponse> task = placesClient.findCurrentPlace(request);
@@ -93,7 +94,7 @@ public class HomeViewModel extends AndroidViewModel {
                 if (e instanceof ApiException) {
                     ApiException apiException = (ApiException) e;
                     int statusCode = apiException.getStatusCode();
-                    Log.e("SearchPlaces", "Error getting nearby places: " + statusCode);
+                    Log.e("SearchPlaces", "Error getting nearby places: " + statusCode, e);
                     // Handle the error status code as required.
                 }
             }
@@ -101,6 +102,9 @@ public class HomeViewModel extends AndroidViewModel {
 
     }
 
+    public void setUserLocation(LatLng userLocation) {
+        this.userLocation = userLocation;
+    }
 }
 
 

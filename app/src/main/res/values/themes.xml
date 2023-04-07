@@ -36,6 +36,7 @@
     <style name="Theme.Go4Lunch.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Go4Lunch.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
     <style name="login_theme" parent="FirebaseUI">
         <item name="android:windowBackground">@drawable/blurred_people_eating_gaussien</item>
         <item name="android:icon">@drawable/hot_bowl_white</item>
