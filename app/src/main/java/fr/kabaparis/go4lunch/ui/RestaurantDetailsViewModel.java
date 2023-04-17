@@ -1,7 +1,11 @@
 package fr.kabaparis.go4lunch.ui;
 
+import static android.content.ContentValues.TAG;
+
 import android.content.Context;
+import android.nfc.Tag;
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
@@ -19,13 +23,18 @@ import com.google.android.libraries.places.api.net.FetchPhotoResponse;
 import com.google.android.libraries.places.api.net.FetchPlaceRequest;
 import com.google.android.libraries.places.api.net.FetchPlaceResponse;
 import com.google.android.libraries.places.api.net.PlacesClient;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.Arrays;
+
+import fr.kabaparis.go4lunch.RestaurantDetailsActivity;
 
 public class RestaurantDetailsViewModel extends ViewModel {
 
     private MutableLiveData<Place> placeLiveData = new MutableLiveData<>();
-
 
     private Context context;
     private MutableLiveData<FetchPhotoResponse> photoLiveData = new MutableLiveData<>();
@@ -80,6 +89,36 @@ public class RestaurantDetailsViewModel extends ViewModel {
             });
         }
     }
+
+    public void onLikeButtonClicked() {
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        if (currentUser != null) {
+            // Get the restaurant ID
+            String restaurantId = getPlace().getValue().getId();
+
+            // Get a reference to the user's favorites collection in Firestore
+            FirebaseFirestore db = FirebaseFirestore.getInstance();
+            db.collection("users").document(currentUser.getUid())
+                    .collection("favorites")
+                    .document(restaurantId).get()
+                    .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                        @Override
+                        public void onSuccess(DocumentSnapshot documentSnapshot) {
+                            Toast.makeText(context.getApplicationContext(), "added as favorite", Toast.LENGTH_SHORT).show();
+                            Log.d(TAG, "Document written to: users/" + currentUser.getUid() + "/favorites/" + restaurantId);
+
+                        }
+
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(context.getApplicationContext(), "fail adding as favorite", Toast.LENGTH_SHORT).show();
+                            Log.w("Error adding favorite", e);
+                        }
+                    });
+        }
+    }
+
     public LiveData<Place> getPlace() {
         return placeLiveData;
     }

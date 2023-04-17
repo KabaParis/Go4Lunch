@@ -1,3 +1,4 @@
+/*
 package fr.kabaparis.go4lunch;
 
 import static android.content.ContentValues.TAG;
@@ -25,38 +26,10 @@ import java.util.List;
 
 
 public class RestaurantFavoritesViewModel extends ViewModel {
-    private final MutableLiveData<List<Restaurant>> favoriteRestaurantsLiveData = new MutableLiveData<>();
+
     private final FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-    public void retrieveFavoriteRestaurants() {
-        // Get a reference to the Firestore collection
-        CollectionReference restaurantsRef = FirebaseFirestore.getInstance().collection("restaurants");
-
-        // Create a query to retrieve the favorite restaurants
-        Query favoriteRestaurantsQuery = restaurantsRef.whereEqualTo("isFavorite", true);
-
-        // Execute the query and listen for the results
-        favoriteRestaurantsQuery.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-            @Override
-            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-                // Convert the result to a list of Restaurant objects
-                List<Restaurant> favoriteRestaurants = new ArrayList<>();
-                for (QueryDocumentSnapshot document : queryDocumentSnapshots) {
-                    Restaurant restaurant = document.toObject(Restaurant.class);
-                    favoriteRestaurants.add(restaurant);
-                }
-
-                // Update the LiveData object with the list of favorite restaurants
-                favoriteRestaurantsLiveData.setValue(favoriteRestaurants);
-            }
-        });
-    }
-
-    public LiveData<List<Restaurant>> getFavoriteRestaurantsLiveData() {
-        return favoriteRestaurantsLiveData;
-    }
-
-    public void addRestaurant(String name, String type, String address) {
+    public void addRestaurant(String name, String type, String address, Boolean isFavorite) {
         // Create a new restaurant with the given name, type, and address
         Map<String, Object> restaurant = new HashMap<>();
         restaurant.put("name", name);
@@ -65,7 +38,7 @@ public class RestaurantFavoritesViewModel extends ViewModel {
         restaurant.put("isFavorite", false);
 
         // Add the new restaurant to the Firestore collection
-        FirebaseFirestore.getInstance().collection("restaurants")
+        FirebaseFirestore.getInstance().collection("favorites")
                 .add(restaurant)
                 .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                     @Override
@@ -83,7 +56,7 @@ public class RestaurantFavoritesViewModel extends ViewModel {
 
     public void updateFavoriteStatus(String restaurantId, boolean isFavorite) {
         // Update the "isFavorite" field of the specified restaurant document
-        FirebaseFirestore.getInstance().collection("restaurants")
+        FirebaseFirestore.getInstance().collection("favorites")
                 .document(restaurantId)
                 .update("isFavorite", isFavorite)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -101,8 +74,8 @@ public class RestaurantFavoritesViewModel extends ViewModel {
     }
 
     public void deleteRestaurant(String restaurantId) {
-// Delete the specified restaurant document from the Firestore collection
-        FirebaseFirestore.getInstance().collection("restaurants")
+       // Delete the specified restaurant document from the Firestore collection
+        FirebaseFirestore.getInstance().collection("favorites")
                 .document(restaurantId)
                 .delete()
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -119,4 +92,4 @@ public class RestaurantFavoritesViewModel extends ViewModel {
                 });
     }
 }
-
+*/

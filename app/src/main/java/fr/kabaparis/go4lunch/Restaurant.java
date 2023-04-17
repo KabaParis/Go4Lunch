@@ -1,3 +1,5 @@
+package fr.kabaparis.go4lunch;
+
 public class Restaurant {
 
     private String name;
@@ -5,7 +7,12 @@ public class Restaurant {
     private String address;
     private boolean isFavorite;
 
-       public Restaurant(String name, String type, String address, boolean isFavorite) {
+    public Restaurant() {
+        // Empty public constructor for Firestore
+    }
+
+
+    public Restaurant(String name, String type, String address, boolean isFavorite) {
         this.name = name;
         this.type = type;
         this.address = address;

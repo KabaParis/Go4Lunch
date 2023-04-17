@@ -161,7 +161,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
                     public void onSuccess(Location location) {
                         if (location != null) {
                             LatLng userLocation =
-                 //                   new LatLng(48.8566, 2.3522); // Paris location
+                            //     new LatLng(48.8566, 2.3522); // Paris location
                                    new LatLng(location.getLatitude(),
                                     location.getLongitude());
                             homeViewModel.setUserLocation(userLocation);

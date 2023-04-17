@@ -60,9 +60,10 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
     @Override
     public void onBindViewHolder(@NonNull RestaurantViewHolder holder, int position) {
         Place restaurant = restaurants.get(position);
+        Log.d("restaurant_id", restaurant.getId());
         holder.nameTextView.setText(restaurant.getName());
         holder.addressTextView.setText(restaurant.getAddress());
-        holder.openingHoursTextView.setText((CharSequence) restaurant.getOpeningHours());
+   //     holder.openingHoursTextView.setText((CharSequence) restaurant.getOpeningHours());
         if(restaurant.getRating() == null) {
             holder.ratingBar.setVisibility(View.INVISIBLE);
         }
@@ -94,24 +95,13 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
 
         distance = (int) user.distanceTo(restaurantLocation);
 
-
-
         holder.distanceTextView.setText(context.getString(R.string.restaurant_distance, distance));
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, RestaurantDetailsActivity.class);
-                intent.putExtra("place", restaurant);
-                context.startActivity(intent);
-            }
-        });
-
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, RestaurantDetailsActivity.class);
-                intent.putExtra("rating", restaurant.getRating());
+                intent.putExtra("place_id", restaurant.getId());
                 context.startActivity(intent);
             }
         });

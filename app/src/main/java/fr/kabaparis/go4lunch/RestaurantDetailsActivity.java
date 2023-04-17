@@ -1,5 +1,7 @@
 package fr.kabaparis.go4lunch;
 
+import static android.content.ContentValues.TAG;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
@@ -31,10 +33,15 @@ import com.google.android.libraries.places.api.net.FetchPlaceResponse;
 import com.google.android.libraries.places.api.net.PlacesClient;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 import fr.kabaparis.go4lunch.ui.RestaurantDetailsViewModel;
 
@@ -56,9 +63,6 @@ public class RestaurantDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurant_details);
-
-        // retrieve rating from intent
-        float intentRating = getIntent().getFloatExtra("rating", 0.0f);
 
 
         mViewModel = new RestaurantDetailsViewModel(this); // passing the activity context
@@ -86,6 +90,7 @@ public class RestaurantDetailsActivity extends AppCompatActivity {
         }).get(RestaurantDetailsViewModel.class);
 
         mViewModel.setContext(this);
+        Log.d("restaurant_id", placeId);
         mViewModel.fetchPlaceDetails(placeId);
 
         mViewModel.getPlace().observe(this, new Observer<Place>() {
@@ -95,7 +100,7 @@ public class RestaurantDetailsActivity extends AppCompatActivity {
                     mRestaurantName.setText(restaurant.getName());
                     mRestaurantAddress.setText(restaurant.getAddress());
                     if (restaurant.getRating() != null) {
-                        mRatingBar.setRating(restaurant.getRating().floatValue());
+                        mRatingBar.setRating(restaurant.getRating().floatValue() * 3 / 5f);
                     }
                 }
             }
@@ -155,18 +160,14 @@ public class RestaurantDetailsActivity extends AppCompatActivity {
         });
 
         // Set MaterialButton Like
-        // When click on Like Button, add the Restaurant to Firebase
-        mButtonLike.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Start the activity to show the list of favorite restaurants
-                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-     //           transaction.replace(R.id., new RestaurantFavoritesFragment());
-                transaction.addToBackStack(null); // Add the transaction to the back stack
-                transaction.commit();
-
-
-            }
-        });
-    }
+        // When click on Like Button, add or remove restaurant from favorites
+            mButtonLike.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mViewModel.onLikeButtonClicked();
+                }
+            });
+        }
 }
+
+
