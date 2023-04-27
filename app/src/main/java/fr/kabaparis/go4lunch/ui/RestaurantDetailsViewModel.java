@@ -3,7 +3,6 @@ package fr.kabaparis.go4lunch.ui;
 import static android.content.ContentValues.TAG;
 
 import android.content.Context;
-import android.nfc.Tag;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -25,12 +24,16 @@ import com.google.android.libraries.places.api.net.FetchPlaceResponse;
 import com.google.android.libraries.places.api.net.PlacesClient;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.Arrays;
-
-import fr.kabaparis.go4lunch.RestaurantDetailsActivity;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
 
 public class RestaurantDetailsViewModel extends ViewModel {
 
@@ -39,10 +42,11 @@ public class RestaurantDetailsViewModel extends ViewModel {
     private Context context;
     private MutableLiveData<FetchPhotoResponse> photoLiveData = new MutableLiveData<>();
 
+    public MutableLiveData<Boolean> mIsInFavorites = new MutableLiveData<>(false);
 
     public RestaurantDetailsViewModel(Context context) {
         this.context = context;
-   }
+    }
 
     public MutableLiveData<Place> getPlaceLiveData() {
         return placeLiveData;
@@ -53,6 +57,7 @@ public class RestaurantDetailsViewModel extends ViewModel {
     }
 
     public void fetchPlaceDetails(String placeId) {
+        onLikeButtonClicked(placeId);
         PlacesClient placesClient = Places.createClient(context);
         if (placeId != null) {
             FetchPlaceRequest request = FetchPlaceRequest.builder(placeId, Arrays.asList(Place.Field.ID, Place.Field.NAME,
@@ -72,7 +77,6 @@ public class RestaurantDetailsViewModel extends ViewModel {
                             @Override
                             public void onSuccess(FetchPhotoResponse fetchPhotoResponse) {
                                 photoLiveData.postValue(fetchPhotoResponse);
-
                             }
                         });
                     }
@@ -90,30 +94,32 @@ public class RestaurantDetailsViewModel extends ViewModel {
         }
     }
 
-    public void onLikeButtonClicked() {
+    public void onLikeButtonClicked(String placeId) {
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
         if (currentUser != null) {
-            // Get the restaurant ID
-            String restaurantId = getPlace().getValue().getId();
 
-            // Get a reference to the user's favorites collection in Firestore
-            FirebaseFirestore db = FirebaseFirestore.getInstance();
-            db.collection("users").document(currentUser.getUid())
-                    .collection("favorites")
-                    .document(restaurantId).get()
+            DocumentReference favoritesRef = FirebaseFirestore.getInstance()
+                    .collection("users").document(currentUser.getUid()).collection("favorites").document(placeId);
+
+            favoritesRef.get()
                     .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                         @Override
-                        public void onSuccess(DocumentSnapshot documentSnapshot) {
-                            Toast.makeText(context.getApplicationContext(), "added as favorite", Toast.LENGTH_SHORT).show();
-                            Log.d(TAG, "Document written to: users/" + currentUser.getUid() + "/favorites/" + restaurantId);
+                        public void onSuccess(DocumentSnapshot queryDocumentSnapshots) {
+                            if (queryDocumentSnapshots.exists()) {
+                                // Document doesn't exist, add it to the collection
+                                mIsInFavorites.setValue(true);
 
+                            } else {
+                                // Document exists, remove it from the collection
+                                mIsInFavorites.setValue(false);
+                            }
                         }
-
-                    }).addOnFailureListener(new OnFailureListener() {
+                    })
+                    .addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
-                            Toast.makeText(context.getApplicationContext(), "fail adding as favorite", Toast.LENGTH_SHORT).show();
-                            Log.w("Error adding favorite", e);
+                            mIsInFavorites.setValue(false);
+                            Log.e(TAG, "Error querying favorites collection", e);
                         }
                     });
         }
@@ -127,5 +133,62 @@ public class RestaurantDetailsViewModel extends ViewModel {
         return photoLiveData;
     }
 
+    public void setRestaurantToFirestore() {
+        // Create a new document with the place ID as the document ID
+        Map<String, Object> data = new HashMap<>();
+        data.put("placeId", placeLiveData.getValue().getId());
+        FirebaseFirestore.getInstance().collection("users")
+                .document(FirebaseAuth.getInstance().getCurrentUser().getUid()).collection("favorites")
+                .document(Objects.requireNonNull(placeLiveData.getValue().getId())).set(data)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        mIsInFavorites.setValue(true);
+                        Log.d(TAG, "Restaurant added to Firestore");
+                        Toast.makeText(context, "Restaurant added to favorites", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.e(TAG, "Error adding restaurant to Firestore", e);
+                        Toast.makeText(context, "Error adding restaurant to favorites", Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
+    public void deleteRestaurantFromFirestore() {
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        if (currentUser != null) {
+
+            DocumentReference favoritesRef = FirebaseFirestore.getInstance()
+                    .collection("users")
+                    .document(currentUser.getUid())
+                    .collection("favorites")
+                    .document(placeLiveData.getValue().getId());
+            favoritesRef.delete()
+                    .addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void unused) {
+                            mIsInFavorites.setValue(false);
+                            Log.d(TAG, "Restaurant deleted from Firestore");
+                            Toast.makeText(context, "Restaurant removed from favorites", Toast.LENGTH_SHORT).show();
+                        }
+                    })
+                    .addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Log.e(TAG, "Error deleting restaurant from Firestore", e);
+                            Toast.makeText(context, "Error removing restaurant from favorites", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+        }
+    }
+    public void updateFavorites() {
+        if (Boolean.TRUE.equals(mIsInFavorites.getValue())) {
+            deleteRestaurantFromFirestore();
+        } else {
+            setRestaurantToFirestore();
+        }
+    }
 }
 
